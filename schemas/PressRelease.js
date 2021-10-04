@@ -13,9 +13,18 @@ export default {
             title: 'Main image',
             name: 'mainImage',
             type: 'image',
-            options: {
-                hotspot: true
-            },
+            fields: [
+                {
+                  name: 'caption',
+                  type: 'simpleEditor',
+                  title: 'Caption',
+                },
+                {
+                  name: 'attribution',
+                  type: 'string',
+                  title: 'Attribution',
+                }
+            ]
         },
         {
             title: 'Introduction',
