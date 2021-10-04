@@ -27,6 +27,7 @@ import homepage from './Homepage'
 import pressRelease from './PressRelease'
 // __ BLOG
 import blogPost from './BlogPost'
+import blogOverview from './BlogOverview'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,6 +36,6 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    contentEditor, simpleEditor, about, aboutPage, embedBlock, videoBlock, audioBlock, programOverview, program, person, event, homepage,pressRelease
+    contentEditor, simpleEditor, about, aboutPage, embedBlock, videoBlock, audioBlock, programOverview, program, person, event, homepage,pressRelease, blogPost, blogOverview
   ]),
 })

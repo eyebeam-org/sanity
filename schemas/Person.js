@@ -48,5 +48,14 @@ export default {
             name: 'website',
             type: 'url'
         },
+        {
+          title: 'Slug',
+          name: 'slug',
+          type: 'slug',
+          options: {
+              source: 'name'
+          },
+          validation: Rule => Rule.required()
+      },
     ]
 }
