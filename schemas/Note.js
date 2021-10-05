@@ -1,6 +1,6 @@
 export default {
-    title: 'Press Release',
-    name: 'pressRelease',
+    title: 'Note',
+    name: 'note',
     type: 'document',
     fields: [
         {

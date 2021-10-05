@@ -24,7 +24,7 @@ import event from './Event'
 // __ HOMEPAGE
 import homepage from './Homepage'
 // __ PRESS RELEASE
-import pressRelease from './PressRelease'
+import note from './Note'
 // __ BLOG
 import blogPost from './BlogPost'
 import blogOverview from './BlogOverview'
@@ -36,6 +36,6 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    contentEditor, simpleEditor, about, aboutPage, embedBlock, videoBlock, audioBlock, programOverview, program, person, event, homepage,pressRelease, blogPost, blogOverview
+    contentEditor, simpleEditor, about, aboutPage, embedBlock, videoBlock, audioBlock, programOverview, program, person, event, homepage, note, blogPost, blogOverview
   ]),
 })

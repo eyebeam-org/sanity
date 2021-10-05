@@ -122,22 +122,22 @@ export default () =>
                                         ),
                                 ])
                         ),
-                    // PRESS RELEASE
+                    // NOTES
                     S.listItem()
-                        .title('Press Release')
+                        .title('Notes')
                         .icon(MdNotifications)
                         .child(
                             S.list()
-                                .title("Press Release")
+                                .title("Notes")
                                 .items([
                                     S.listItem()
-                                        .title('Press Release')
+                                        .title('Notes')
                                         .icon(MdEvent)
                                         .child(
                                             S.documentList()
-                                                .title('Press Release')
+                                                .title('Notes')
                                                 .filter('_type == $type')
-                                                .params({ type: 'pressRelease' })
+                                                .params({ type: 'note' })
                                         ),
                                 ])
                         ),
