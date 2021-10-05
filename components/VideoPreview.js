@@ -13,12 +13,9 @@ export default class VideoPreview extends React.Component {
             .replace('file-', '')
             .replace('-mp4', '.mp4') : ''
 
-
         return (
             <div style={{ width: '100%', padding: '40px', border: '0', borderRadius: '0px' }}>
                 {value.video ? <video src={url} controls style={{ maxWidth: '300px', maxHeight: '300px' }} /> : 'No video selected'}
-                {/* <p>{value.caption}</p> */}
-                {/* <p>{value.attribution}</p> */}
             </div >
         )
     }
