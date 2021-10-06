@@ -8,7 +8,12 @@ import {
     MdStar,
     MdHome,
     MdNotifications,
-    MdArticle
+    MdArticle,
+    MdPlace,
+    MdNotes,
+    MdWork,
+    MdGroups,
+    MdComment
   } from "react-icons/md"
 
 export default () =>
@@ -58,14 +63,14 @@ export default () =>
             // PROGRAM
             S.listItem()
                 .title('Program')
-                .icon(MdStar)
+                .icon(MdGroups)
                 .child(
                     S.list()
                         .title("Program")
                         .items([
                             S.listItem()
                                 .title("Program Overview")
-                                .icon(MdStar)
+                                .icon(MdGroups)
                                 .child(
                                     S.editor()
                                         .title("Programs Overview")
@@ -75,7 +80,7 @@ export default () =>
                                 ),
                             S.listItem()
                                 .title('Program')
-                                .icon(MdStar)
+                                .icon(MdGroups)
                                 .child(
                                     S.documentList()
                                         .title('Program')
@@ -125,14 +130,14 @@ export default () =>
                     // NOTES
                     S.listItem()
                         .title('Notes')
-                        .icon(MdNotifications)
+                        .icon(MdNotes)
                         .child(
                             S.list()
                                 .title("Notes")
                                 .items([
                                     S.listItem()
                                         .title('Notes')
-                                        .icon(MdEvent)
+                                        .icon(MdNotes)
                                         .child(
                                             S.documentList()
                                                 .title('Notes')
@@ -141,7 +146,83 @@ export default () =>
                                         ),
                                 ])
                         ),
-                    // Blog
+                    // GOALS
+                    S.listItem()
+                        .title('Goals')
+                        .icon(MdPlace)
+                        .child(
+                            S.list()
+                                .title("Goals")
+                                .items([
+                                    S.listItem()
+                                        .title('Goals')
+                                        .icon(MdPlace)
+                                        .child(
+                                            S.documentList()
+                                                .title('Goals')
+                                                .filter('_type == $type')
+                                                .params({ type: 'goal' })
+                                        ),
+                                ])
+                        ),
+                    // PROJECTS
+                    S.listItem()
+                        .title('Projects')
+                        .icon(MdWork)
+                        .child(
+                            S.list()
+                                .title("Projects")
+                                .items([
+                                    S.listItem()
+                                        .title('Projects')
+                                        .icon(MdWork)
+                                        .child(
+                                            S.documentList()
+                                                .title('Projects')
+                                                .filter('_type == $type')
+                                                .params({ type: 'project' })
+                                        ),
+                                ])
+                        ),
+                    // PRESS
+                    S.listItem()
+                        .title('Press')
+                        .icon(MdStar)
+                        .child(
+                            S.list()
+                                .title("Press")
+                                .items([
+                                    S.listItem()
+                                        .title('Press')
+                                        .icon(MdStar)
+                                        .child(
+                                            S.documentList()
+                                                .title('Press')
+                                                .filter('_type == $type')
+                                                .params({ type: 'press' })
+                                        ),
+                                ])
+                        ),
+                    // STATEMENTS
+                    S.listItem()
+                        .title('Statements')
+                        .icon(MdComment)
+                        .child(
+                            S.list()
+                                .title("Statements")
+                                .items([
+                                    S.listItem()
+                                        .title('Statements')
+                                        .icon(MdComment)
+                                        .child(
+                                            S.documentList()
+                                                .title('Statements')
+                                                .filter('_type == $type')
+                                                .params({ type: 'statement' })
+                                        ),
+                                ])
+                        ),
+                    // BLOG
                     S.listItem()
                         .title('Blog')
                         .icon(MdArticle)

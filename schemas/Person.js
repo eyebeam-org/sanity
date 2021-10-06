@@ -33,6 +33,8 @@ export default {
             options: {
               list: [
                 { title: "Artist", value: "artist" },
+                { title: "Staff", value: "staff" },
+                { title: "Board", value: "board" },
                 { title: "Writer", value: "writer" },
                 { title: "Advisory Committee", value: "advisoryCommittee" }
               ],

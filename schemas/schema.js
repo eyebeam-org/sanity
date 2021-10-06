@@ -23,11 +23,19 @@ import person from './Person'
 import event from './Event'
 // __ HOMEPAGE
 import homepage from './Homepage'
-// __ PRESS RELEASE
+// __ NOTE
 import note from './Note'
 // __ BLOG
 import blogPost from './BlogPost'
 import blogOverview from './BlogOverview'
+// __ GOAL
+import goal from './Goal'
+// __ PROJECT
+import project from './Project'
+// __ PRESS
+import press from './Press'
+// __ STATEMENT
+import statement from './Statement'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -36,6 +44,24 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    contentEditor, simpleEditor, about, aboutPage, embedBlock, videoBlock, audioBlock, programOverview, program, person, event, homepage, note, blogPost, blogOverview
+    contentEditor,
+    simpleEditor, 
+    about, 
+    aboutPage, 
+    embedBlock, 
+    videoBlock, 
+    audioBlock, 
+    programOverview, 
+    program, 
+    person, 
+    event, 
+    homepage, 
+    note, 
+    blogPost, 
+    blogOverview,
+    goal,
+    project,
+    press,
+    statement
   ]),
 })
