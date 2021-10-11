@@ -36,6 +36,8 @@ import project from './Project'
 import press from './Press'
 // __ STATEMENT
 import statement from './Statement'
+// __ STATEMENT
+import contact from './Contact'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -62,6 +64,7 @@ export default createSchema({
     goal,
     project,
     press,
-    statement
+    statement,
+    contact
   ]),
 })
