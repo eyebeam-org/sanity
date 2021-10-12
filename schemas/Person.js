@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             title: 'Name',
-            name: 'name',
+            name: 'title',
             type: 'string',
             validation: Rule => Rule.required()
         },
@@ -72,7 +72,7 @@ export default {
           name: 'slug',
           type: 'slug',
           options: {
-              source: 'name'
+              source: 'title'
           },
           validation: Rule => Rule.required()
       },

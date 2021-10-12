@@ -13,7 +13,8 @@ import {
     MdNotes,
     MdWork,
     MdGroups,
-    MdComment
+    MdComment,
+    MdMail
   } from "react-icons/md"
 
 export default () =>
@@ -30,6 +31,17 @@ export default () =>
                         .id('homepage')
                         .schemaType("homepage")
                         .documentId("homepage")
+                ),
+            // CONTACT
+            S.listItem()
+                .title("Contact")
+                .icon(MdMail)
+                .child(
+                    S.editor()
+                        .title("Contact")
+                        .id('contact')
+                        .schemaType("contact")
+                        .documentId("contact")
                 ),
             // ABOUT
             S.listItem()
