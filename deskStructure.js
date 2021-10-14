@@ -22,16 +22,16 @@ export default () =>
         .title("eyebeam.org")
         .items([
             // HOMEPAGE
-            S.listItem()
-                .title("Homepage")
-                .icon(MdHome)
-                .child(
-                    S.editor()
-                        .title("Homepage")
-                        .id('homepage')
-                        .schemaType("homepage")
-                        .documentId("homepage")
-                ),
+            // S.listItem()
+            //     .title("Homepage")
+            //     .icon(MdHome)
+            //     .child(
+            //         S.editor()
+            //             .title("Homepage")
+            //             .id('homepage')
+            //             .schemaType("homepage")
+            //             .documentId("homepage")
+            //     ),
             // CONTACT
             S.listItem()
                 .title("Contact")
@@ -80,16 +80,6 @@ export default () =>
                     S.list()
                         .title("Program")
                         .items([
-                            S.listItem()
-                                .title("Program Overview")
-                                .icon(MdGroups)
-                                .child(
-                                    S.editor()
-                                        .title("Programs Overview")
-                                        .id('programOverview')
-                                        .schemaType("programOverview")
-                                        .documentId("programOverview")
-                                ),
                             S.listItem()
                                 .title('Program')
                                 .icon(MdGroups)
