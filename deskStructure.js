@@ -6,6 +6,7 @@ import {
     MdBook,
     MdEvent,
     MdStar,
+    MdStarBorder,
     MdHome,
     MdNotifications,
     MdArticle,
@@ -14,8 +15,9 @@ import {
     MdWork,
     MdGroups,
     MdComment,
+    MdVideocam,
     MdMail
-  } from "react-icons/md"
+} from "react-icons/md"
 
 export default () =>
     S.list()
@@ -91,166 +93,204 @@ export default () =>
                                 ),
                         ])
                 ),
-                // PEOPLE
-                S.listItem()
-                    .title('People')
-                    .icon(MdAccountCircle)
-                    .child(
-                        S.list()
-                            .title("People")
-                            .items([
-                                S.listItem()
-                                    .title('Person')
-                                    .icon(MdAccountCircle)
-                                    .child(
-                                        S.documentList()
-                                            .title('Person')
-                                            .filter('_type == $type')
-                                            .params({ type: 'person' })
-                                    ),
-                            ])
-                    ),
-                    // EVENT
-                    S.listItem()
-                        .title('Event')
-                        .icon(MdEvent)
-                        .child(
-                            S.list()
-                                .title("Event")
-                                .items([
-                                    S.listItem()
+            // PEOPLE
+            S.listItem()
+                .title('People')
+                .icon(MdAccountCircle)
+                .child(
+                    S.list()
+                        .title("People")
+                        .items([
+                            S.listItem()
+                                .title('Person')
+                                .icon(MdAccountCircle)
+                                .child(
+                                    S.documentList()
+                                        .title('Person')
+                                        .filter('_type == $type')
+                                        .params({ type: 'person' })
+                                ),
+                        ])
+                ),
+            // EVENT
+            S.listItem()
+                .title('Event')
+                .icon(MdEvent)
+                .child(
+                    S.list()
+                        .title("Event")
+                        .items([
+                            S.listItem()
+                                .title('Event')
+                                .icon(MdEvent)
+                                .child(
+                                    S.documentList()
                                         .title('Event')
-                                        .icon(MdEvent)
-                                        .child(
-                                            S.documentList()
-                                                .title('Event')
-                                                .filter('_type == $type')
-                                                .params({ type: 'event' })
-                                        ),
-                                ])
-                        ),
-                    // NOTES
-                    S.listItem()
-                        .title('Notes')
-                        .icon(MdNotes)
-                        .child(
-                            S.list()
-                                .title("Notes")
-                                .items([
-                                    S.listItem()
+                                        .filter('_type == $type')
+                                        .params({ type: 'event' })
+                                ),
+                        ])
+                ),
+            // NOTES
+            S.listItem()
+                .title('Notes')
+                .icon(MdNotes)
+                .child(
+                    S.list()
+                        .title("Notes")
+                        .items([
+                            S.listItem()
+                                .title('Notes')
+                                .icon(MdNotes)
+                                .child(
+                                    S.documentList()
                                         .title('Notes')
-                                        .icon(MdNotes)
-                                        .child(
-                                            S.documentList()
-                                                .title('Notes')
-                                                .filter('_type == $type')
-                                                .params({ type: 'note' })
-                                        ),
-                                ])
-                        ),
-                    // GOALS
-                    S.listItem()
-                        .title('Goals')
-                        .icon(MdPlace)
-                        .child(
-                            S.list()
-                                .title("Goals")
-                                .items([
-                                    S.listItem()
-                                        .title('Goals')
-                                        .icon(MdPlace)
-                                        .child(
-                                            S.documentList()
-                                                .title('Goals')
-                                                .filter('_type == $type')
-                                                .params({ type: 'goal' })
-                                        ),
-                                ])
-                        ),
-                    // PROJECTS
-                    S.listItem()
-                        .title('Projects')
-                        .icon(MdWork)
-                        .child(
-                            S.list()
-                                .title("Projects")
-                                .items([
-                                    S.listItem()
+                                        .filter('_type == $type')
+                                        .params({ type: 'note' })
+                                ),
+                        ])
+                ),
+            // PROJECTS
+            S.listItem()
+                .title('Projects')
+                .icon(MdWork)
+                .child(
+                    S.list()
+                        .title("Projects")
+                        .items([
+                            S.listItem()
+                                .title('Projects')
+                                .icon(MdWork)
+                                .child(
+                                    S.documentList()
                                         .title('Projects')
-                                        .icon(MdWork)
-                                        .child(
-                                            S.documentList()
-                                                .title('Projects')
-                                                .filter('_type == $type')
-                                                .params({ type: 'project' })
-                                        ),
-                                ])
-                        ),
-                    // PRESS
-                    S.listItem()
-                        .title('Press')
-                        .icon(MdStar)
-                        .child(
-                            S.list()
-                                .title("Press")
-                                .items([
-                                    S.listItem()
+                                        .filter('_type == $type')
+                                        .params({ type: 'project' })
+                                ),
+                        ])
+                ),
+            // NEWS
+            S.listItem()
+                .title('News')
+                .icon(MdStar)
+                .child(
+                    S.list()
+                        .title("News")
+                        .items([
+                            S.listItem()
+                                .title('News')
+                                .icon(MdStar)
+                                .child(
+                                    S.documentList()
+                                        .title('News')
+                                        .filter('_type == $type')
+                                        .params({ type: 'news' })
+                                ),
+                        ])
+                ),
+            // PRESS
+            S.listItem()
+                .title('Press')
+                .icon(MdStarBorder)
+                .child(
+                    S.list()
+                        .title("Press")
+                        .items([
+                            S.listItem()
+                                .title('Press')
+                                .icon(MdStarBorder)
+                                .child(
+                                    S.documentList()
                                         .title('Press')
-                                        .icon(MdStar)
-                                        .child(
-                                            S.documentList()
-                                                .title('Press')
-                                                .filter('_type == $type')
-                                                .params({ type: 'press' })
-                                        ),
-                                ])
-                        ),
-                    // STATEMENTS
-                    S.listItem()
-                        .title('Statements')
-                        .icon(MdComment)
-                        .child(
-                            S.list()
-                                .title("Statements")
-                                .items([
-                                    S.listItem()
+                                        .filter('_type == $type')
+                                        .params({ type: 'press' })
+                                ),
+                        ])
+                ),
+            // STATEMENTS
+            S.listItem()
+                .title('Statements')
+                .icon(MdComment)
+                .child(
+                    S.list()
+                        .title("Statements")
+                        .items([
+                            S.listItem()
+                                .title('Statements')
+                                .icon(MdComment)
+                                .child(
+                                    S.documentList()
                                         .title('Statements')
-                                        .icon(MdComment)
-                                        .child(
-                                            S.documentList()
-                                                .title('Statements')
-                                                .filter('_type == $type')
-                                                .params({ type: 'statement' })
-                                        ),
-                                ])
-                        ),
-                    // BLOG
-                    S.listItem()
-                        .title('Blog')
-                        .icon(MdArticle)
-                        .child(
-                            S.list()
-                                .title("Blog")
-                                .items([
-                                    S.listItem()
+                                        .filter('_type == $type')
+                                        .params({ type: 'statement' })
+                                ),
+                        ])
+                ),
+            // VIDEO
+            S.listItem()
+                .title('Video')
+                .icon(MdVideocam)
+                .child(
+                    S.list()
+                        .title("Video")
+                        .items([
+                            S.listItem()
+                                .title('Video')
+                                .icon(MdVideocam)
+                                .child(
+                                    S.documentList()
+                                        .title('Video')
+                                        .filter('_type == $type')
+                                        .params({ type: 'videoPost' })
+                                ),
+                        ])
+                ),
+            // BLOG
+            S.listItem()
+                .title('Blog')
+                .icon(MdArticle)
+                .child(
+                    S.list()
+                        .title("Blog")
+                        .items([
+                            S.listItem()
+                                .title("Blog Overview")
+                                .icon(MdStar)
+                                .child(
+                                    S.editor()
                                         .title("Blog Overview")
-                                        .icon(MdStar)
-                                        .child(
-                                            S.editor()
-                                                .title("Blog Overview")
-                                                .id('blogOverview')
-                                                .schemaType("blogOverview")
-                                                .documentId("blogOverview")
-                                        ),
-                                    S.listItem()
+                                        .id('blogOverview')
+                                        .schemaType("blogOverview")
+                                        .documentId("blogOverview")
+                                ),
+                            S.listItem()
+                                .title('Blog Posts')
+                                .icon(MdArticle)
+                                .child(
+                                    S.documentList()
                                         .title('Blog Posts')
-                                        .icon(MdArticle)
-                                        .child(
-                                            S.documentList()
-                                                .title('Blog Posts')
-                                                .filter('_type == $type')
-                                                .params({ type: 'blogPost' })
-                                        ),
-                                ])
-                        )
+                                        .filter('_type == $type')
+                                        .params({ type: 'blogPost' })
+                                ),
+                        ])
+                ),
+            // GOALS
+            S.listItem()
+                .title('Goals')
+                .icon(MdPlace)
+                .child(
+                    S.list()
+                        .title("Goals")
+                        .items([
+                            S.listItem()
+                                .title('Goals')
+                                .icon(MdPlace)
+                                .child(
+                                    S.documentList()
+                                        .title('Goals')
+                                        .filter('_type == $type')
+                                        .params({ type: 'goal' })
+                                ),
+                        ])
+                ),
         ]);

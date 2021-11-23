@@ -34,10 +34,14 @@ import goal from './Goal'
 import project from './Project'
 // __ PRESS
 import press from './Press'
+// __ NEWS
+import news from './News'
 // __ STATEMENT
 import statement from './Statement'
-// __ STATEMENT
+// __ CONTACT
 import contact from './Contact'
+// __ VIDEO
+import videoPost from './VideoPost'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -47,24 +51,26 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     contentEditor,
-    simpleEditor, 
-    about, 
-    aboutPage, 
-    embedBlock, 
-    videoBlock, 
-    audioBlock, 
-    programOverview, 
-    program, 
-    person, 
-    event, 
-    homepage, 
-    note, 
-    blogPost, 
+    simpleEditor,
+    about,
+    aboutPage,
+    embedBlock,
+    videoBlock,
+    audioBlock,
+    programOverview,
+    program,
+    person,
+    event,
+    homepage,
+    note,
+    blogPost,
     blogOverview,
     goal,
     project,
     press,
+    news,
     statement,
-    contact
+    contact,
+    videoPost
   ]),
 })
