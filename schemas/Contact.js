@@ -18,5 +18,10 @@ export default {
             name: 'phoneNumber',
             type: 'string'
         },
+        {
+            title: 'Tagline',
+            name: 'tagline',
+            type: 'string'
+        },
     ]
 }
