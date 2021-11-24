@@ -42,6 +42,10 @@ import statement from './Statement'
 import contact from './Contact'
 // __ VIDEO
 import videoPost from './VideoPost'
+// __ SUPPORT
+import support from './Support'
+// __ EYEBEAM IS CHANGING
+import eyebeamIsChanging from './EyebeamIsChanging'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -71,6 +75,8 @@ export default createSchema({
     news,
     statement,
     contact,
-    videoPost
+    videoPost,
+    support,
+    eyebeamIsChanging
   ]),
 })

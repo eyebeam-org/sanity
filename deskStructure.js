@@ -45,6 +45,28 @@ export default () =>
                         .schemaType("contact")
                         .documentId("contact")
                 ),
+            // EYEBEAM IS CHANGING
+            S.listItem()
+                .title("Eyebeam is changing")
+                .icon(MdBook)
+                .child(
+                    S.editor()
+                        .title("Eyebeam is changing")
+                        .id('eyebeam-is-changing')
+                        .schemaType("eyebeamIsChanging")
+                        .documentId("eyebeam-is-changing")
+                ),
+            // SUPPORT
+            S.listItem()
+                .title("Support")
+                .icon(MdBook)
+                .child(
+                    S.editor()
+                        .title("Support")
+                        .id('support')
+                        .schemaType("support")
+                        .documentId("support")
+                ),
             // ABOUT
             S.listItem()
                 .title('About')
