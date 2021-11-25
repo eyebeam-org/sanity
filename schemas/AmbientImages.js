@@ -17,11 +17,6 @@ export default {
                             name: 'caption',
                             type: 'simpleEditor',
                             title: 'Caption',
-                        },
-                        {
-                            name: 'attribution',
-                            type: 'string',
-                            title: 'Attribution',
                         }
                     ]
                 },

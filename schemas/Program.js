@@ -15,14 +15,9 @@ export default {
             type: 'image',
             fields: [
                 {
-                  name: 'caption',
-                  type: 'simpleEditor',
-                  title: 'Caption',
-                },
-                {
-                  name: 'attribution',
-                  type: 'string',
-                  title: 'Attribution',
+                    name: 'caption',
+                    type: 'simpleEditor',
+                    title: 'Caption',
                 }
             ]
         },
@@ -46,23 +41,23 @@ export default {
             name: 'faq',
             type: 'array',
             of: [
-                    {
-                        type: 'object',
-                        name: 'faqItem',
-                        fields: [
-                            {
-                                title: 'Question',
-                                name: 'question',
-                                type: 'string'
-                            },
-                            {
-                                title: 'Answer',
-                                name: 'answer',
-                                type: 'simpleEditor'
-                            },
-                        ]
-                    }
-                ]
+                {
+                    type: 'object',
+                    name: 'faqItem',
+                    fields: [
+                        {
+                            title: 'Question',
+                            name: 'question',
+                            type: 'string'
+                        },
+                        {
+                            title: 'Answer',
+                            name: 'answer',
+                            type: 'simpleEditor'
+                        },
+                    ]
+                }
+            ]
         },
         {
             title: 'Open for applications',
@@ -73,13 +68,13 @@ export default {
             title: 'Application period end date',
             name: 'applicationEndDate',
             type: 'datetime',
-            hidden: ({document}) => !document?.applicationsOpen
+            hidden: ({ document }) => !document?.applicationsOpen
         },
         {
             title: 'Application text',
             name: 'applicationText',
             type: 'simpleEditor',
-            hidden: ({document}) => !document?.applicationsOpen
+            hidden: ({ document }) => !document?.applicationsOpen
         },
         {
             title: 'Fellows',
@@ -90,7 +85,7 @@ export default {
                     title: 'Person',
                     name: 'person',
                     type: 'reference',
-                    to: [{type: 'person'}]
+                    to: [{ type: 'person' }]
                 },
             ]
         },
@@ -99,24 +94,24 @@ export default {
             name: 'pastFellows',
             type: 'array',
             of: [
-                    {
-                        type: 'object',
-                        name: 'fellowRecord',
-                        fields: [
-                            {
-                                title: 'Person',
-                                name: 'person',
-                                type: 'reference',
-                                to: [{type: 'person'}]
-                            },
-                            {
-                                title: 'Year',
-                                name: 'year',
-                                type: 'string'
-                            }
-                        ]
-                    }
-                ]
+                {
+                    type: 'object',
+                    name: 'fellowRecord',
+                    fields: [
+                        {
+                            title: 'Person',
+                            name: 'person',
+                            type: 'reference',
+                            to: [{ type: 'person' }]
+                        },
+                        {
+                            title: 'Year',
+                            name: 'year',
+                            type: 'string'
+                        }
+                    ]
+                }
+            ]
         },
         {
             title: 'Advisors',
@@ -127,7 +122,7 @@ export default {
                     title: 'Person',
                     name: 'person',
                     type: 'reference',
-                    to: [{type: 'person'}]
+                    to: [{ type: 'person' }]
                 },
             ]
         },

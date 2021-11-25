@@ -29,7 +29,6 @@ export default {
         select: {
             video: 'videoFile',
             caption: 'caption',
-            attribution: 'attribution'
         },
         component: VideoPreview
     }

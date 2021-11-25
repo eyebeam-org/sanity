@@ -23,8 +23,7 @@ export default {
     preview: {
         select: {
             url: 'url',
-            caption: 'caption',
-            attribution: 'attribution'
+            caption: 'caption'
         },
         component: EmbedPreview
     }

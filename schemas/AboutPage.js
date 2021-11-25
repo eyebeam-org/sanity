@@ -15,15 +15,10 @@ export default {
             type: 'image',
             fields: [
                 {
-                  name: 'caption',
-                  type: 'simpleEditor',
-                  title: 'Caption',
+                    name: 'caption',
+                    type: 'simpleEditor',
+                    title: 'Caption',
                 },
-                {
-                  name: 'attribution',
-                  type: 'string',
-                  title: 'Attribution',
-                }
             ]
         },
         {

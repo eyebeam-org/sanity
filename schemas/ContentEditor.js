@@ -6,7 +6,7 @@ import {
     MdHighlight,
     MdAccountBox,
     MdShortText,
-  } from "react-icons/md"
+} from "react-icons/md"
 
 
 const highlightRender = props => (
@@ -127,14 +127,6 @@ export default {
                             title: 'Caption',
                             name: 'caption',
                             type: 'simpleEditor',
-                            options: {
-                                isHighlighted: true
-                            }
-                        },
-                        {
-                            name: 'attribution',
-                            type: 'string',
-                            title: 'Attribution',
                             options: {
                                 isHighlighted: true
                             }

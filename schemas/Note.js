@@ -15,14 +15,9 @@ export default {
             type: 'image',
             fields: [
                 {
-                  name: 'caption',
-                  type: 'simpleEditor',
-                  title: 'Caption',
-                },
-                {
-                  name: 'attribution',
-                  type: 'string',
-                  title: 'Attribution',
+                    name: 'caption',
+                    type: 'simpleEditor',
+                    title: 'Caption',
                 }
             ]
         },
@@ -45,7 +40,7 @@ export default {
                     title: 'Person',
                     name: 'person',
                     type: 'reference',
-                    to: [{type: 'person'}]
+                    to: [{ type: 'person' }]
                 },
             ]
         },
