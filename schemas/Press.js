@@ -1,5 +1,12 @@
+// ICONS
+import {
+    MdStarBorder
+} from "react-icons/md"
+
+
 export default {
     title: 'Press',
+    icon: MdStarBorder,
     name: 'press',
     type: 'document',
     fields: [
@@ -20,6 +27,16 @@ export default {
                     title: 'Caption',
                 }
             ]
+        },
+        {
+            title: 'External link',
+            name: 'externalLink',
+            type: 'url'
+        },
+        {
+            title: 'PDF File',
+            name: 'pdfFile',
+            type: 'file'
         },
         {
             title: 'Content',

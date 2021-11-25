@@ -1,5 +1,12 @@
+// ICONS
+import {
+    MdDescription
+} from "react-icons/md"
+
+
 export default {
     title: 'Blog Post',
+    icon: MdDescription,
     name: 'blogPost',
     type: 'document',
     fields: [

@@ -1,5 +1,12 @@
+// ICONS
+import {
+    MdGroups
+} from "react-icons/md"
+
+
 export default {
     title: 'Program',
+    icon: MdGroups,
     name: 'program',
     type: 'document',
     fields: [

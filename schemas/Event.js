@@ -1,5 +1,12 @@
+// ICONS
+import {
+    MdEvent,
+} from "react-icons/md"
+
+
 export default {
     title: 'Event',
+    icon: MdEvent,
     name: 'event',
     type: 'document',
     fields: [

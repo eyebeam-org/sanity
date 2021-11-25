@@ -1,5 +1,11 @@
+// ICONS
+import {
+    MdStickyNote2,
+} from "react-icons/md"
+
 export default {
     title: 'Note',
+    icon: MdStickyNote2,
     name: 'note',
     type: 'document',
     fields: [

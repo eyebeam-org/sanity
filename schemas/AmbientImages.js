@@ -1,7 +1,8 @@
 export default {
-    title: 'AmbientImages',
+    title: 'Ambient images',
     name: 'ambientImages',
     type: 'document',
+    __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
     fields: [
         {
             title: 'Images',
@@ -9,7 +10,7 @@ export default {
             type: 'array',
             of: [
                 {
-                    title: 'Iage',
+                    title: 'Image',
                     name: 'image',
                     type: 'image',
                     fields: [

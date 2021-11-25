@@ -1,5 +1,12 @@
+// ICONS
+import {
+    MdVideocam
+} from "react-icons/md"
+
+
 export default {
     title: 'Video',
+    icon: MdVideocam,
     name: 'videoPost',
     type: 'document',
     fields: [

@@ -1,6 +1,13 @@
+// ICONS
+import {
+    MdFlag
+} from "react-icons/md"
+
+
 export default {
     title: 'Goal',
     name: 'goal',
+    icon: MdFlag,
     type: 'document',
     fields: [
         {

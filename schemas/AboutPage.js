@@ -1,6 +1,13 @@
+// ICONS
+import {
+    MdArticle,
+} from "react-icons/md"
+
+
 export default {
     title: 'About page',
     name: 'aboutPage',
+    icon: MdArticle,
     type: 'document',
     fields: [
         {

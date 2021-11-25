@@ -3,104 +3,148 @@ import S from "@sanity/desk-tool/structure-builder";
 // ICONS
 import {
     MdAccountCircle,
-    MdBook,
     MdEvent,
     MdStar,
     MdStarBorder,
     MdHome,
-    MdNotifications,
     MdArticle,
-    MdPlace,
-    MdNotes,
     MdWork,
     MdGroups,
     MdComment,
     MdVideocam,
     MdMail,
-    MdImage
+    MdCollections,
+    MdFlag,
+    MdTopic,
+    MdQuiz,
+    MdHelpCenter,
+    MdStickyNote2,
+    MdDescription,
+    MdLocationCity
 } from "react-icons/md"
 
 export default () =>
     S.list()
         .title("eyebeam.org")
         .items([
-            // HOMEPAGE
-            // S.listItem()
-            //     .title("Homepage")
-            //     .icon(MdHome)
-            //     .child(
-            //         S.editor()
-            //             .title("Homepage")
-            //             .id('homepage')
-            //             .schemaType("homepage")
-            //             .documentId("homepage")
-            //     ),
-            // CONTACT
+            // GENERAL
             S.listItem()
-                .title("Contact")
-                .icon(MdMail)
+                .title('General')
+                .icon(MdHome)
                 .child(
-                    S.editor()
-                        .title("Contact")
-                        .id('contact')
-                        .schemaType("contact")
-                        .documentId("contact")
+                    S.list()
+                        .title('General')
+                        .items([
+                            // CONTACT
+                            S.listItem()
+                                .title("Contact")
+                                .icon(MdMail)
+                                .child(
+                                    S.editor()
+                                        .title("Contact")
+                                        .id('contact')
+                                        .schemaType("contact")
+                                        .documentId("contact")
+                                ),
+                            // AMBIENT IMAGES
+                            S.listItem()
+                                .title("Ambient images")
+                                .icon(MdCollections)
+                                .child(
+                                    S.editor()
+                                        .title("Ambient images")
+                                        .id('ambient-images')
+                                        .schemaType("ambientImages")
+                                        .documentId("ambient-images")
+                                ),
+                            // STATEMENTS
+                            S.listItem()
+                                .title('Statements')
+                                .icon(MdComment)
+                                .child(
+                                    S.documentList()
+                                        .title('Statements')
+                                        .filter('_type == $type')
+                                        .params({ type: 'statement' })
+                                ),
+                            // CITIES
+                            S.listItem()
+                                .title("Cities")
+                                .icon(MdLocationCity)
+                                .child(
+                                    S.editor()
+                                        .title("Cities")
+                                        .id('cities')
+                                        .schemaType("cities")
+                                        .documentId("cities")
+                                ),
+                            // GOALS
+                            S.listItem()
+                                .title('UN Goals')
+                                .icon(MdFlag)
+                                .child(
+                                    S.documentList()
+                                        .title('Goals')
+                                        .filter('_type == $type')
+                                        .params({ type: 'goal' })
+                                ),
+                        ])
                 ),
-            // EYEBEAM IS CHANGING
+            // SINGLE PAGES
             S.listItem()
-                .title("Eyebeam is changing")
-                .icon(MdBook)
+                .title('Single pages')
+                .icon(MdTopic)
                 .child(
-                    S.editor()
-                        .title("Eyebeam is changing")
-                        .id('eyebeam-is-changing')
-                        .schemaType("eyebeamIsChanging")
-                        .documentId("eyebeam-is-changing")
-                ),
-            // SUPPORT
-            S.listItem()
-                .title("Support")
-                .icon(MdBook)
-                .child(
-                    S.editor()
-                        .title("Support")
-                        .id('support')
-                        .schemaType("support")
-                        .documentId("support")
-                ),
-            // AMBIENT IMAGES
-            S.listItem()
-                .title("Ambient images")
-                .icon(MdImage)
-                .child(
-                    S.editor()
-                        .title("Ambient images")
-                        .id('ambient-images')
-                        .schemaType("ambientImages")
-                        .documentId("ambient-images")
-                ),
-            // NEWSLETTER
-            S.listItem()
-                .title("Newsletter")
-                .icon(MdImage)
-                .child(
-                    S.editor()
-                        .title("Newsletter")
-                        .id('newsletter')
-                        .schemaType("newsletter")
-                        .documentId("newsletter")
+                    S.list()
+                        .title('Single pages')
+                        .items([
+                            // EYEBEAM IS CHANGING
+                            S.listItem()
+                                .title("Eyebeam is changing")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Eyebeam is changing")
+                                        .id('eyebeam-is-changing')
+                                        .schemaType("eyebeamIsChanging")
+                                        .documentId("eyebeam-is-changing")
+                                ),
+                            // SUPPORT
+                            S.listItem()
+                                .title("Support")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Support")
+                                        .id('support')
+                                        .schemaType("support")
+                                        .documentId("support")
+                                ),
+                            // NEWSLETTER
+                            S.listItem()
+                                .title("Newsletter")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Newsletter")
+                                        .id('newsletter')
+                                        .schemaType("newsletter")
+                                        .documentId("newsletter")
+                                ),
+                        ])
                 ),
             // ABOUT
             S.listItem()
-                .title('About')
-                .icon(MdBook)
+                .title('About eyebeam')
+                .icon(MdQuiz)
                 .child(
                     S.list()
-                        .title("About")
+                        .title("About eyebeam")
                         .items([
+                            // ABOUT OVERVIEW
                             S.listItem()
                                 .title("About Overview")
-                                .icon(MdBook)
+                                .icon(MdHelpCenter)
                                 .child(
                                     S.editor()
                                         .title("About Overview")
@@ -108,120 +152,17 @@ export default () =>
                                         .schemaType("about")
                                         .documentId("about")
                                 ),
+                            // ABOUT PAGES
                             S.listItem()
                                 .title('About Pages')
-                                .icon(MdBook)
+                                .icon(MdArticle)
                                 .child(
                                     S.documentList()
                                         .title('About Page')
                                         .filter('_type == $type')
                                         .params({ type: 'aboutPage' })
                                 ),
-                        ])
-                ),
-            // PROGRAM
-            S.listItem()
-                .title('Program')
-                .icon(MdGroups)
-                .child(
-                    S.list()
-                        .title("Program")
-                        .items([
-                            S.listItem()
-                                .title('Program')
-                                .icon(MdGroups)
-                                .child(
-                                    S.documentList()
-                                        .title('Program')
-                                        .filter('_type == $type')
-                                        .params({ type: 'program' })
-                                ),
-                        ])
-                ),
-            // PEOPLE
-            S.listItem()
-                .title('People')
-                .icon(MdAccountCircle)
-                .child(
-                    S.list()
-                        .title("People")
-                        .items([
-                            S.listItem()
-                                .title('Person')
-                                .icon(MdAccountCircle)
-                                .child(
-                                    S.documentList()
-                                        .title('Person')
-                                        .filter('_type == $type')
-                                        .params({ type: 'person' })
-                                ),
-                        ])
-                ),
-            // EVENT
-            S.listItem()
-                .title('Event')
-                .icon(MdEvent)
-                .child(
-                    S.list()
-                        .title("Event")
-                        .items([
-                            S.listItem()
-                                .title('Event')
-                                .icon(MdEvent)
-                                .child(
-                                    S.documentList()
-                                        .title('Event')
-                                        .filter('_type == $type')
-                                        .params({ type: 'event' })
-                                ),
-                        ])
-                ),
-            // NOTES
-            S.listItem()
-                .title('Notes')
-                .icon(MdNotes)
-                .child(
-                    S.list()
-                        .title("Notes")
-                        .items([
-                            S.listItem()
-                                .title('Notes')
-                                .icon(MdNotes)
-                                .child(
-                                    S.documentList()
-                                        .title('Notes')
-                                        .filter('_type == $type')
-                                        .params({ type: 'note' })
-                                ),
-                        ])
-                ),
-            // PROJECTS
-            S.listItem()
-                .title('Projects')
-                .icon(MdWork)
-                .child(
-                    S.list()
-                        .title("Projects")
-                        .items([
-                            S.listItem()
-                                .title('Projects')
-                                .icon(MdWork)
-                                .child(
-                                    S.documentList()
-                                        .title('Projects')
-                                        .filter('_type == $type')
-                                        .params({ type: 'project' })
-                                ),
-                        ])
-                ),
-            // NEWS
-            S.listItem()
-                .title('News')
-                .icon(MdStar)
-                .child(
-                    S.list()
-                        .title("News")
-                        .items([
+                            // NEWS
                             S.listItem()
                                 .title('News')
                                 .icon(MdStar)
@@ -231,16 +172,7 @@ export default () =>
                                         .filter('_type == $type')
                                         .params({ type: 'news' })
                                 ),
-                        ])
-                ),
-            // PRESS
-            S.listItem()
-                .title('Press')
-                .icon(MdStarBorder)
-                .child(
-                    S.list()
-                        .title("Press")
-                        .items([
+                            // PRESS
                             S.listItem()
                                 .title('Press')
                                 .icon(MdStarBorder)
@@ -252,90 +184,75 @@ export default () =>
                                 ),
                         ])
                 ),
-            // STATEMENTS
+            // PEOPLE
             S.listItem()
-                .title('Statements')
-                .icon(MdComment)
+                .title('People')
+                .icon(MdAccountCircle)
                 .child(
-                    S.list()
-                        .title("Statements")
-                        .items([
-                            S.listItem()
-                                .title('Statements')
-                                .icon(MdComment)
-                                .child(
-                                    S.documentList()
-                                        .title('Statements')
-                                        .filter('_type == $type')
-                                        .params({ type: 'statement' })
-                                ),
-                        ])
+                    S.documentList()
+                        .title('People')
+                        .filter('_type == $type')
+                        .params({ type: 'person' })
+                ),
+            // PROGRAMS
+            S.listItem()
+                .title('Programs')
+                .icon(MdGroups)
+                .child(
+                    S.documentList()
+                        .title('Programs')
+                        .filter('_type == $type')
+                        .params({ type: 'program' })
+
+                ),
+            // PROJECTS
+            S.listItem()
+                .title('Projects')
+                .icon(MdWork)
+                .child(
+                    S.documentList()
+                        .title('Projects')
+                        .filter('_type == $type')
+                        .params({ type: 'project' })
+                ),
+            // EVENTS
+            S.listItem()
+                .title('Events')
+                .icon(MdEvent)
+                .child(
+                    S.documentList()
+                        .title('Events')
+                        .filter('_type == $type')
+                        .params({ type: 'event' })
+                ),
+            // NOTES
+            S.listItem()
+                .title('Notes')
+                .icon(MdStickyNote2)
+                .child(
+                    S.documentList()
+                        .title('Notes')
+                        .filter('_type == $type')
+                        .params({ type: 'note' })
                 ),
             // VIDEO
             S.listItem()
                 .title('Video')
                 .icon(MdVideocam)
                 .child(
-                    S.list()
-                        .title("Video")
-                        .items([
-                            S.listItem()
-                                .title('Video')
-                                .icon(MdVideocam)
-                                .child(
-                                    S.documentList()
-                                        .title('Video')
-                                        .filter('_type == $type')
-                                        .params({ type: 'videoPost' })
-                                ),
-                        ])
+                    S.documentList()
+                        .title('Video')
+                        .filter('_type == $type')
+                        .params({ type: 'videoPost' })
                 ),
-            // BLOG
+            // JOURNAL
             S.listItem()
-                .title('Blog')
-                .icon(MdArticle)
+                .title('Journal')
+                .icon(MdDescription)
                 .child(
-                    S.list()
-                        .title("Blog")
-                        .items([
-                            S.listItem()
-                                .title("Blog Overview")
-                                .icon(MdStar)
-                                .child(
-                                    S.editor()
-                                        .title("Blog Overview")
-                                        .id('blogOverview')
-                                        .schemaType("blogOverview")
-                                        .documentId("blogOverview")
-                                ),
-                            S.listItem()
-                                .title('Blog Posts')
-                                .icon(MdArticle)
-                                .child(
-                                    S.documentList()
-                                        .title('Blog Posts')
-                                        .filter('_type == $type')
-                                        .params({ type: 'blogPost' })
-                                ),
-                        ])
-                ),
-            // GOALS
-            S.listItem()
-                .title('Goals')
-                .icon(MdPlace)
-                .child(
-                    S.list()
-                        .title("Goals")
-                        .items([
-                            S.listItem()
-                                .title('Goals')
-                                .icon(MdPlace)
-                                .child(
-                                    S.documentList()
-                                        .title('Goals')
-                                        .filter('_type == $type')
-                                        .params({ type: 'goal' })
-                                ),
-                        ])
+                    S.documentList()
+                        .title('Journal')
+                        .filter('_type == $type')
+                        .params({ type: 'blogPost' })
                 ),
         ]);

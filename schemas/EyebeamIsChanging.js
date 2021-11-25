@@ -2,6 +2,7 @@ export default {
     title: 'Eyebeam is changing',
     name: 'eyebeamIsChanging',
     type: 'document',
+    __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
     fields: [
         {
             title: 'Title',

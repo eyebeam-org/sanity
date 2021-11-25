@@ -2,6 +2,7 @@ export default {
     title: 'Newsletter',
     name: 'newsletter',
     type: 'document',
+    __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
     fields: [
         {
             title: 'Title',

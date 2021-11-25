@@ -1,5 +1,11 @@
+// ICONS
+import {
+    MdStar,
+} from "react-icons/md"
+
 export default {
     title: 'News',
+    icon: MdStar,
     name: 'news',
     type: 'document',
     fields: [
@@ -25,6 +31,11 @@ export default {
             title: 'Content',
             name: 'content',
             type: 'contentEditor'
+        },
+        {
+            title: 'PDF File',
+            name: 'pdfFile',
+            type: 'file'
         },
         {
             title: 'People',

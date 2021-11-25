@@ -1,5 +1,13 @@
+// ICONS
+import {
+  MdAccountCircle
+} from "react-icons/md"
+
+
+
 export default {
   title: 'Person',
+  icon: MdAccountCircle,
   name: 'person',
   type: 'document',
   fields: [
@@ -60,6 +68,11 @@ export default {
       title: 'Website',
       name: 'website',
       type: 'url'
+    },
+    {
+      title: 'First engagement with Eyebeam',
+      name: 'firstEngagement',
+      type: 'number'
     },
     {
       title: 'Slug',

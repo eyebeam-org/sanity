@@ -21,8 +21,6 @@ import program from './Program'
 import person from './Person'
 // __ EVENT
 import event from './Event'
-// __ HOMEPAGE
-import homepage from './Homepage'
 // __ NOTE
 import note from './Note'
 // __ BLOG
@@ -50,6 +48,8 @@ import eyebeamIsChanging from './EyebeamIsChanging'
 import ambientImages from './AmbientImages'
 // __ NEWSLETTER
 import newsletter from './Newsletter'
+// __ CITIES
+import cities from './Cities'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -69,7 +69,6 @@ export default createSchema({
     program,
     person,
     event,
-    homepage,
     note,
     blogPost,
     blogOverview,
@@ -83,6 +82,7 @@ export default createSchema({
     support,
     eyebeamIsChanging,
     ambientImages,
-    newsletter
+    newsletter,
+    cities
   ]),
 })

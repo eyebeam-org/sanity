@@ -1,6 +1,12 @@
+// ICONS
+import {
+    MdComment
+} from "react-icons/md"
+
 export default {
     title: 'Statement',
     name: 'statement',
+    icon: MdComment,
     type: 'document',
     fields: [
         {
@@ -24,8 +30,8 @@ export default {
             title: 'Person',
             name: 'person',
             type: 'reference',
-            to: [{type: 'person'}]
-        },  
+            to: [{ type: 'person' }]
+        },
         {
             title: 'Slug',
             name: 'slug',

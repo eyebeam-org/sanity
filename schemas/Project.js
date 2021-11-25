@@ -1,5 +1,12 @@
+// ICONS
+import {
+    MdWork
+} from "react-icons/md"
+
+
 export default {
     title: 'Project',
+    icon: MdWork,
     name: 'project',
     type: 'document',
     fields: [
