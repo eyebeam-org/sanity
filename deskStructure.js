@@ -16,7 +16,8 @@ import {
     MdGroups,
     MdComment,
     MdVideocam,
-    MdMail
+    MdMail,
+    MdImage
 } from "react-icons/md"
 
 export default () =>
@@ -66,6 +67,28 @@ export default () =>
                         .id('support')
                         .schemaType("support")
                         .documentId("support")
+                ),
+            // AMBIENT IMAGES
+            S.listItem()
+                .title("Ambient images")
+                .icon(MdImage)
+                .child(
+                    S.editor()
+                        .title("Ambient images")
+                        .id('ambient-images')
+                        .schemaType("ambientImages")
+                        .documentId("ambient-images")
+                ),
+            // NEWSLETTER
+            S.listItem()
+                .title("Newsletter")
+                .icon(MdImage)
+                .child(
+                    S.editor()
+                        .title("Newsletter")
+                        .id('newsletter')
+                        .schemaType("newsletter")
+                        .documentId("newsletter")
                 ),
             // ABOUT
             S.listItem()
