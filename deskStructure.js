@@ -15,12 +15,11 @@ import {
     MdMail,
     MdCollections,
     MdFlag,
-    MdTopic,
     MdQuiz,
-    MdHelpCenter,
     MdStickyNote2,
     MdDescription,
-    MdLocationCity
+    MdLocationCity,
+    MdFlare
 } from "react-icons/md"
 
 export default () =>
@@ -35,90 +34,27 @@ export default () =>
                     S.list()
                         .title('General')
                         .items([
-                            // CONTACT
-                            S.listItem()
-                                .title("Contact")
-                                .icon(MdMail)
-                                .child(
-                                    S.editor()
-                                        .title("Contact")
-                                        .id('contact')
-                                        .schemaType("contact")
-                                        .documentId("contact")
-                                ),
-                            // AMBIENT IMAGES
-                            S.listItem()
-                                .title("Ambient images")
-                                .icon(MdCollections)
-                                .child(
-                                    S.editor()
-                                        .title("Ambient images")
-                                        .id('ambient-images')
-                                        .schemaType("ambientImages")
-                                        .documentId("ambient-images")
-                                ),
-                            // STATEMENTS
-                            S.listItem()
-                                .title('Statements')
-                                .icon(MdComment)
-                                .child(
-                                    S.documentList()
-                                        .title('Statements')
-                                        .filter('_type == $type')
-                                        .params({ type: 'statement' })
-                                ),
-                            // CITIES
-                            S.listItem()
-                                .title("Cities")
-                                .icon(MdLocationCity)
-                                .child(
-                                    S.editor()
-                                        .title("Cities")
-                                        .id('cities')
-                                        .schemaType("cities")
-                                        .documentId("cities")
-                                ),
-                            // GOALS
-                            S.listItem()
-                                .title('UN Goals')
-                                .icon(MdFlag)
-                                .child(
-                                    S.documentList()
-                                        .title('Goals')
-                                        .filter('_type == $type')
-                                        .params({ type: 'goal' })
-                                ),
-                        ])
-                ),
-            // SINGLE PAGES
-            S.listItem()
-                .title('Single pages')
-                .icon(MdTopic)
-                .child(
-                    S.list()
-                        .title('Single pages')
-                        .items([
                             // EYEBEAM IS CHANGING
                             S.listItem()
-                                .title("Eyebeam is changing")
+                                .title("Eyebeam is Changing")
                                 .icon(MdArticle)
                                 .child(
                                     S.editor()
-                                        .title("Eyebeam is changing")
+                                        .title("Eyebeam is Changing")
                                         .id('eyebeam-is-changing')
                                         .schemaType("eyebeamIsChanging")
                                         .documentId("eyebeam-is-changing")
                                 ),
-                            // SUPPORT
+                            // EVERYTHING
                             S.listItem()
-                                .title("Support")
-                                .icon(MdArticle)
+                                .title("Everything")
+                                .icon(MdFlare)
                                 .child(
                                     S.editor()
-                                        .title("Support")
-                                        .id('support')
-                                        .schemaType("support")
-                                        .documentId("support")
+                                        .title("Everything")
+                                        .id('everything')
+                                        .schemaType("everything")
+                                        .documentId("everything")
                                 ),
                             // NEWSLETTER
                             S.listItem()
@@ -131,6 +67,50 @@ export default () =>
                                         .schemaType("newsletter")
                                         .documentId("newsletter")
                                 ),
+                            // AMBIENT IMAGES
+                            S.listItem()
+                                .title("Ambient Images")
+                                .icon(MdCollections)
+                                .child(
+                                    S.editor()
+                                        .title("Ambient images")
+                                        .id('ambient-images')
+                                        .schemaType("ambientImages")
+                                        .documentId("ambient-images")
+                                ),
+                            // CITIES
+                            S.listItem()
+                                .title("Cities")
+                                .icon(MdLocationCity)
+                                .child(
+                                    S.editor()
+                                        .title("Cities")
+                                        .id('cities')
+                                        .schemaType("cities")
+                                        .documentId("cities")
+                                ),
+                            S.divider(),
+                            // STATEMENTS
+                            S.listItem()
+                                .title('Statements')
+                                .icon(MdComment)
+                                .child(
+                                    S.documentList()
+                                        .title('Statements')
+                                        .filter('_type == $type')
+                                        .params({ type: 'statement' })
+                                ),
+                            // GOALS
+                            S.listItem()
+                                .title('UN Goals')
+                                .icon(MdFlag)
+                                .child(
+                                    S.documentList()
+                                        .title('Goals')
+                                        .filter('_type == $type')
+                                        .params({ type: 'goal' })
+                                ),
+
                         ])
                 ),
             // ABOUT
@@ -143,25 +123,126 @@ export default () =>
                         .items([
                             // ABOUT OVERVIEW
                             S.listItem()
-                                .title("About Overview")
-                                .icon(MdHelpCenter)
-                                .child(
-                                    S.editor()
-                                        .title("About Overview")
-                                        .id('about')
-                                        .schemaType("about")
-                                        .documentId("about")
-                                ),
-                            // ABOUT PAGES
-                            S.listItem()
-                                .title('About Pages')
+                                .title("What is Eyebeam?")
                                 .icon(MdArticle)
                                 .child(
-                                    S.documentList()
-                                        .title('About Page')
-                                        .filter('_type == $type')
-                                        .params({ type: 'aboutPage' })
+                                    S.editor()
+                                        .title("What is Eyebeam?")
+                                        .id('what-is-eyebeam')
+                                        .schemaType("whatIsEyebeam")
+                                        .documentId("what-is-eyebeam")
                                 ),
+                            // OUR MISSION AND VALUES
+                            S.listItem()
+                                .title("Our Mission and Values")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Our Mission and Values")
+                                        .id('our-mission-and-values')
+                                        .schemaType('ourMissionAndValues')
+                                        .documentId('our-mission-and-values')
+                                ),
+                            // OUR HISTORY
+                            S.listItem()
+                                .title("Our History")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Our History")
+                                        .id('our-history')
+                                        .schemaType("ourHistory")
+                                        .documentId("our-history")
+                                ),
+                            // STAFF AND BOARD
+                            S.listItem()
+                                .title("Staff and Board")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Staff and Board")
+                                        .id('staff-and-board')
+                                        .schemaType('staffAndBoard')
+                                        .documentId('staff-and-board')
+                                ),
+                            // ARTISTS
+                            S.listItem()
+                                .title("Artists")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Artists")
+                                        .id('artists')
+                                        .schemaType("artists")
+                                        .documentId("artists")
+                                ),
+                            // SUPPORT
+                            S.listItem()
+                                .title("Support")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Support")
+                                        .id('support-eyebeam')
+                                        .schemaType("supportEyebeam")
+                                        .documentId("support-eyebeam")
+                                ),
+                            // GET INVOLVED
+                            S.listItem()
+                                .title("Get involved")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Get involved")
+                                        .id('get-involved')
+                                        .schemaType("getInvolved")
+                                        .documentId("get-involved")
+                                ),
+                            // PRESS AND NEWS
+                            S.listItem()
+                                .title("Press and News")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Press and News")
+                                        .id('press-and-news')
+                                        .schemaType("pressAndNews")
+                                        .documentId("press-and-news")
+                                ),
+                            // OUR OPERATING DOCUMENTS
+                            S.listItem()
+                                .title("Our Operating Documents")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Our Operating Documents")
+                                        .id('our-operating-documents')
+                                        .schemaType("ourOperatingDocuments")
+                                        .documentId("our-operating-documents")
+                                ),
+                            // MEDIA KIT
+                            S.listItem()
+                                .title("Media kit")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Media kit")
+                                        .id('media-kit')
+                                        .schemaType("mediaKit")
+                                        .documentId("media-kit")
+                                ),
+                            // CONTACT
+                            S.listItem()
+                                .title("Contact")
+                                .icon(MdMail)
+                                .child(
+                                    S.editor()
+                                        .title("Contact")
+                                        .id('contact')
+                                        .schemaType("contact")
+                                        .documentId("contact")
+                                ),
+                            S.divider(),
                             // NEWS
                             S.listItem()
                                 .title('News')
@@ -253,6 +334,6 @@ export default () =>
                     S.documentList()
                         .title('Journal')
                         .filter('_type == $type')
-                        .params({ type: 'blogPost' })
+                        .params({ type: 'journalPost' })
                 ),
         ]);

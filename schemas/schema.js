@@ -5,51 +5,52 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Schemas
-// __ OBJECTS
-import contentEditor from './ContentEditor'
-import simpleEditor from './SimpleEditor'
-import embedBlock from './Embed'
-import videoBlock from './Video'
-import audioBlock from './Audio'
+// __ COMPONENTS
+import contentEditor from './components/ContentEditor'
+import simpleEditor from './components/SimpleEditor'
+import embedBlock from './components/Embed'
+import videoBlock from './components/Video'
+import audioBlock from './components/Audio'
+// __ GENERAL
+import eyebeamIsChanging from './general/EyebeamIsChanging'
+import newsletter from './general/Newsletter'
+import everything from './general/Everything'
+import ambientImages from './general/AmbientImages'
+import cities from './general/Cities'
+import goal from './general/Goal'
+import statement from './general/Statement'
 // __ ABOUT
-import about from './about'
-import aboutPage from './AboutPage'
-// __ PROGRAM
-import programOverview from './ProgramOverview'
-import program from './Program'
+import whatIsEyebeam from './about/WhatIsEyebeam'
+import ourMissionAndValues from './about/OurMissionAndValues'
+import ourHistory from './about/ourHistory'
+import staffAndBoard from './about/StaffAndBoard'
+import artists from './about/Artists'
+import supportEyebeam from './about/SupportEyebeam'
+import getInvolved from './about/GetInvolved'
+import pressAndNews from './about/PressAndNews'
+import ourOperatingDocuments from './about/OurOperatingDocuments'
+import mediaKit from './about/MediaKit'
+import contact from './about/Contact'
 // __ PEOPLE
-import person from './Person'
+import person from './categories/people/Person'
+// __ PROGRAM
+import programOverview from './categories/program/ProgramOverview'
+import program from './categories/program/Program'
 // __ EVENT
-import event from './Event'
+import event from './categories/event/Event'
 // __ NOTE
-import note from './Note'
-// __ BLOG
-import blogPost from './BlogPost'
-import blogOverview from './BlogOverview'
-// __ GOAL
-import goal from './Goal'
+import note from './categories/note/Note'
+// __ JOURNAL
+import journalPost from './categories/journal/JournalPost'
+import journalOverview from './categories/journal/JournalOverview'
 // __ PROJECT
-import project from './Project'
+import project from './categories/project/Project'
 // __ PRESS
-import press from './Press'
+import press from './categories/press/Press'
 // __ NEWS
-import news from './News'
-// __ STATEMENT
-import statement from './Statement'
-// __ CONTACT
-import contact from './Contact'
+import news from './categories/news/News'
 // __ VIDEO
-import videoPost from './VideoPost'
-// __ SUPPORT
-import support from './Support'
-// __ EYEBEAM IS CHANGING
-import eyebeamIsChanging from './EyebeamIsChanging'
-// __ AMBIENT IMAGES
-import ambientImages from './AmbientImages'
-// __ NEWSLETTER
-import newsletter from './Newsletter'
-// __ CITIES
-import cities from './Cities'
+import videoPost from './categories/video/VideoPost'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -58,31 +59,43 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    // COMPONENTS
     contentEditor,
     simpleEditor,
-    about,
-    aboutPage,
     embedBlock,
     videoBlock,
     audioBlock,
+    // GENERAL
+    eyebeamIsChanging,
+    everything,
+    ambientImages,
+    newsletter,
+    cities,
+    statement,
+    goal,
+    // ABOUT
+    whatIsEyebeam,
+    ourMissionAndValues,
+    ourHistory,
+    staffAndBoard,
+    artists,
+    supportEyebeam,
+    getInvolved,
+    pressAndNews,
+    ourOperatingDocuments,
+    mediaKit,
+    contact,
+    // CATAGORIES
     programOverview,
     program,
     person,
     event,
     note,
-    blogPost,
-    blogOverview,
-    goal,
+    journalPost,
+    journalOverview,
     project,
     press,
     news,
-    statement,
-    contact,
     videoPost,
-    support,
-    eyebeamIsChanging,
-    ambientImages,
-    newsletter,
-    cities
   ]),
 })
