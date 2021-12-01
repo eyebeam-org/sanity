@@ -1,8 +1,13 @@
-// ICONS
-import { MdHighlight } from "react-icons/md"
+import React from 'react'
 
-const highlightRender = props => (
-    <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
+// ICONS
+import {
+    MdAccountCircle,
+} from "react-icons/md"
+
+
+const personRender = props => (
+    <span style={{ background: '#dfddd7', color: '#221f20', borderBottom: 'none' }}>{props.children}</span>
 )
 
 export default {
@@ -42,6 +47,23 @@ export default {
                                         name: 'href',
                                         type: 'string'
                                     }
+                                ]
+                            },
+                            {
+                                title: 'Person',
+                                name: 'person',
+                                type: 'object',
+                                blockEditor: {
+                                    icon: MdAccountCircle,
+                                    render: personRender
+                                },
+                                fields: [
+                                    {
+                                        title: 'Person',
+                                        name: 'link',
+                                        type: 'reference',
+                                        to: [{ type: 'person' }]
+                                    },
                                 ]
                             },
                         ]

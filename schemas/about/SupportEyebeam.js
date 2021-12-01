@@ -39,21 +39,6 @@ export default {
             type: 'contentEditor'
         },
         {
-            title: 'Donate text',
-            name: 'donateText',
-            type: 'simpleEditor'
-        },
-        {
-            title: 'Our Supporters',
-            name: 'ourSupporters',
-            type: 'simpleEditor'
-        },
-        {
-            title: 'Additional acknowledgements',
-            name: 'additionalText',
-            type: 'simpleEditor'
-        },
-        {
             title: 'Slug',
             name: 'slug',
             type: 'slug',

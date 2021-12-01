@@ -1,6 +1,6 @@
 // Embed.js
 import { MdPictureInPicture } from "react-icons/md"
-import EmbedPreview from '../../components/EmbedPreview'
+// import EmbedPreview from '../../components/EmbedPreview'
 
 export default {
     name: 'embedBlock',
@@ -20,11 +20,11 @@ export default {
             type: 'simpleEditor',
         },
     ],
-    preview: {
-        select: {
-            url: 'url',
-            caption: 'caption'
-        },
-        component: EmbedPreview
-    }
+    // preview: {
+    //     select: {
+    //         url: 'url',
+    //         caption: 'caption'
+    //     },
+    //     component: EmbedPreview
+    // }
 }

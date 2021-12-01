@@ -3,9 +3,7 @@ import React from 'react'
 // ICONS
 import {
     MdImage,
-    MdHighlight,
-    MdAccountBox,
-    MdShortText,
+    MdAccountCircle,
 } from "react-icons/md"
 
 
@@ -17,22 +15,21 @@ const interviewNameRender = props => (
     <span style={{ backgroundColor: 'lightgrey', fontWeight: 'bold' }}>{props.children}</span>
 )
 
-const alignCenterRender = props => (
-    <p style={{ textAlign: 'center' }}>{props.children}</p>
+const personRender = props => (
+    <span style={{ background: '#dfddd7', color: '#221f20', borderBottom: 'none' }}>{props.children}</span>
 )
 
-const alignRightRender = props => (
-    <p style={{ textAlign: 'right' }}>{props.children}</p>
+const columnRender = props => (
+    <span style={{ background: 'rgba(255,0,0,0.2)' }}>{props.children}</span>
 )
 
-const footNoteRender = props => (
-    <span style={{ background: 'rgba(0,0,255,0.2)' }}>{props.children}</span>
+const logoBlockRender = props => (
+    <div style={{ background: 'rgba(0,0,255,0.2)', padding: '15px' }}>{props.children}</div>
 )
 
-const noteRender = props => (
-    <p style={{ fontSize: '0.8em' }}>{props.children}</p>
+const invertedBlockRender = props => (
+    <div style={{ background: 'rgba(0,0,0,0.8)', color: 'rgba(255,255,255,1)', padding: '15px' }}>{props.children}</div>
 )
-
 
 export default {
     type: 'object',
@@ -48,27 +45,20 @@ export default {
                     type: 'block',
                     styles: [
                         { title: 'Normal', value: 'normal' },
-                        {
-                            title: 'Center aligned', value: 'center-aligned', blockEditor: {
-                                render: alignCenterRender
-                            }
-                        },
-                        {
-                            title: 'Right aligned', value: 'right-aligned', blockEditor: {
-                                render: alignRightRender
-                            }
-                        },
-                        { title: 'H1', value: 'h1' },
                         { title: 'H2', value: 'h2' },
                         { title: 'H3', value: 'h3' },
-                        { title: 'H4', value: 'h4' },
-                        { title: 'Quote', value: 'blockquote' },
                         {
-                            title: 'Note', value: 'note', blockEditor: {
-                                render: noteRender
+                            title: 'Logo block', value: 'logoBlock', blockEditor: {
+                                render: logoBlockRender
+                            }
+                        },
+                        {
+                            title: 'Inverted block', value: 'invertedBlock', blockEditor: {
+                                render: invertedBlockRender
                             }
                         }
                     ],
+                    lists: [],
                     marks: {
                         decorators: [
                             {
@@ -79,20 +69,12 @@ export default {
                                 title: 'Emphasis',
                                 value: 'em'
                             },
-                            // {
-                            //     title: 'Interview name',
-                            //     value: 'interviewName',
-                            //     blockEditor: {
-                            //         icon: MdAccountBox,
-                            //         render: interviewNameRender
-                            //     }
-                            // }
                         ],
                         annotations: [
                             {
+                                title: 'Link',
                                 name: 'link',
                                 type: 'object',
-                                title: 'Link',
                                 fields: [
                                     {
                                         name: 'href',
@@ -101,18 +83,19 @@ export default {
                                 ]
                             },
                             {
-                                name: 'footnote',
+                                title: 'Person',
+                                name: 'person',
                                 type: 'object',
-                                title: 'Footnote',
                                 blockEditor: {
-                                    icon: MdShortText,
-                                    render: footNoteRender
+                                    icon: MdAccountCircle,
+                                    render: personRender
                                 },
                                 fields: [
                                     {
-                                        title: 'Footnote text',
-                                        name: 'content',
-                                        type: 'simpleEditor'
+                                        title: 'Person',
+                                        name: 'link',
+                                        type: 'reference',
+                                        to: [{ type: 'person' }]
                                     },
                                 ]
                             },
@@ -124,6 +107,14 @@ export default {
                     icon: MdImage,
                     fields: [
                         {
+                            title: 'Alt text',
+                            name: 'alt',
+                            type: 'string',
+                            options: {
+                                isHighlighted: true
+                            }
+                        },
+                        {
                             title: 'Caption',
                             name: 'caption',
                             type: 'simpleEditor',
@@ -132,23 +123,53 @@ export default {
                             }
                         },
                         {
-                            title: 'Fullbredd',
+                            title: 'Full width',
                             name: 'fullWidth',
                             type: 'boolean',
                             options: {
                                 isHighlighted: true
                             }
                         },
+                        {
+                            title: 'Cover & Crop',
+                            name: 'coverAndCrop',
+                            type: 'boolean',
+                            options: {
+                                isHighlighted: true
+                            },
+                        },
+                        {
+                            title: 'Layout',
+                            name: 'layout',
+                            type: 'string',
+                            options: {
+                                isHighlighted: true,
+                                list: [
+                                    { title: 'Left', value: 'left' },
+                                    { title: 'Right', value: 'right' },
+                                ],
+                                layout: 'radio'
+                            },
+                        },
                     ]
                 },
-                {
-                    type: 'videoBlock'
-                },
-                {
-                    type: 'audioBlock'
-                },
+                // {
+                //     type: 'videoBlock'
+                // },
+                // {
+                //     type: 'audioBlock'
+                // },
                 {
                     type: 'embedBlock'
+                },
+                {
+                    type: 'columnsBlock'
+                },
+                {
+                    type: 'dividerBlock'
+                },
+                {
+                    type: 'donationWidget'
                 },
             ]
         }

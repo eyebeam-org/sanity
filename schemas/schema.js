@@ -11,6 +11,9 @@ import simpleEditor from './components/SimpleEditor'
 import embedBlock from './components/Embed'
 import videoBlock from './components/Video'
 import audioBlock from './components/Audio'
+import dividerBlock from './components/Divider'
+import columnsBlock from './components/Columns'
+import donationWidget from './components/DonationWidget'
 // __ GENERAL
 import eyebeamIsChanging from './general/EyebeamIsChanging'
 import newsletter from './general/Newsletter'
@@ -65,6 +68,9 @@ export default createSchema({
     embedBlock,
     videoBlock,
     audioBlock,
+    dividerBlock,
+    columnsBlock,
+    donationWidget,
     // GENERAL
     eyebeamIsChanging,
     everything,
