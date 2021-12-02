@@ -15,7 +15,7 @@ export default {
         {
             title: 'Column content',
             name: 'columnContent',
-            type: 'simpleEditor',
+            type: 'contentEditor',
         },
     ]
 }
