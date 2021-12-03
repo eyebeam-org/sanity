@@ -14,6 +14,7 @@ import audioBlock from './components/Audio'
 import dividerBlock from './components/Divider'
 import columnsBlock from './components/Columns'
 import donationWidget from './components/DonationWidget'
+import applicationButton from './components/ApplicationButton'
 // __ GENERAL
 import eyebeamIsChanging from './general/EyebeamIsChanging'
 import newsletter from './general/Newsletter'
@@ -71,6 +72,7 @@ export default createSchema({
     dividerBlock,
     columnsBlock,
     donationWidget,
+    applicationButton,
     // GENERAL
     eyebeamIsChanging,
     everything,

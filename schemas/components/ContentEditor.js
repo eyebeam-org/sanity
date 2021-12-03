@@ -19,6 +19,10 @@ const personRender = props => (
     <span style={{ background: '#dfddd7', color: '#221f20', borderBottom: 'none' }}>{props.children}</span>
 )
 
+const mediumRender = props => (
+    <span style={{ fontSize: '1.3em' }}>{props.children}</span>
+)
+
 const columnRender = props => (
     <span style={{ background: 'rgba(255,0,0,0.2)' }}>{props.children}</span>
 )
@@ -45,6 +49,11 @@ export default {
                     type: 'block',
                     styles: [
                         { title: 'Normal', value: 'normal' },
+                        {
+                            title: 'Medium', value: 'medium', blockEditor: {
+                                render: mediumRender
+                            }
+                        },
                         { title: 'H2', value: 'h2' },
                         { title: 'H3', value: 'h3' },
                         {
@@ -167,6 +176,9 @@ export default {
                 },
                 {
                     type: 'dividerBlock'
+                },
+                {
+                    type: 'applicationButton'
                 },
                 {
                     type: 'donationWidget'

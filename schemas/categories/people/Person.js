@@ -57,12 +57,12 @@ export default {
     {
       title: 'Quote',
       name: 'quote',
-      type: 'string'
+      type: 'text'
     },
     {
       title: 'Bio',
       name: 'bio',
-      type: 'contentEditor'
+      type: 'simpleEditor'
     },
     {
       title: 'Website',
