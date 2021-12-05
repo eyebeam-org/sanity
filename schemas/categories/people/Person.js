@@ -55,6 +55,11 @@ export default {
       },
     },
     {
+      title: "Group tags",
+      name: "groupTags",
+      type: 'tags'
+    },
+    {
       title: 'Quote',
       name: 'quote',
       type: 'text'

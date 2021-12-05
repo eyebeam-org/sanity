@@ -29,16 +29,6 @@ export default {
             ]
         },
         {
-            title: 'Source',
-            name: 'source',
-            type: 'string'
-        },
-        {
-            title: 'External link',
-            name: 'externalLink',
-            type: 'url'
-        },
-        {
             title: 'PDF File',
             name: 'pdfFile',
             type: 'file'

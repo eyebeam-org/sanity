@@ -35,7 +35,7 @@ export default {
             type: 'string',
         },
         {
-            title: 'longText',
+            title: 'Long text',
             name: 'longText',
             type: 'simpleEditor',
         },
