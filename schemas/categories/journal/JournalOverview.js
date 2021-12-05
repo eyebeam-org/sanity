@@ -1,6 +1,6 @@
 export default {
-    title: 'Blog Overview',
-    name: 'blogOverview',
+    title: 'Journal Overview',
+    name: 'journalOverview',
     type: 'document',
     // __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
     fields: [
@@ -13,7 +13,7 @@ export default {
                     title: 'Sub section',
                     name: 'subSection',
                     type: 'reference',
-                    to: [{type: 'blogPost'}]
+                    to: [{ type: 'journalPost' }]
                 },
             ]
         },

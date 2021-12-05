@@ -16,7 +16,15 @@ export default {
             type: 'string',
             validation: Rule => Rule.required()
         },
-
+        {
+            title: 'Slug',
+            name: 'slug',
+            type: 'slug',
+            options: {
+                source: 'title'
+            },
+            validation: Rule => Rule.required()
+        },
         {
             title: 'Introduction',
             name: 'introduction',
@@ -40,13 +48,9 @@ export default {
             type: 'contentEditor'
         },
         {
-            title: 'Slug',
-            name: 'slug',
-            type: 'slug',
-            options: {
-                source: 'title'
-            },
-            validation: Rule => Rule.required()
+            title: 'See also',
+            name: 'seeAlso',
+            type: 'seeAlso'
         }
     ]
 }

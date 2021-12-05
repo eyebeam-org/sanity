@@ -5,9 +5,9 @@ import {
 
 
 export default {
-    title: 'Blog Post',
+    title: 'Journal Post',
     icon: MdDescription,
-    name: 'blogPost',
+    name: 'journalPost',
     type: 'document',
     fields: [
         {
