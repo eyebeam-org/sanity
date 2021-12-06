@@ -1,5 +1,6 @@
 // Columns.js
 import { MdViewColumn } from "react-icons/md"
+import ColumnsPreview from '../../components/ColumnsPreview'
 
 export default {
     title: 'Columns',
@@ -17,5 +18,12 @@ export default {
             name: 'columnContent',
             type: 'contentEditor',
         },
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'title',
+            columnContent: 'columnContent'
+        },
+        component: ColumnsPreview
+    }
 }

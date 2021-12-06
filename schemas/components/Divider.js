@@ -1,5 +1,6 @@
 // Divider.js
 import { MdHorizontalRule } from "react-icons/md"
+import DividerPreview from '../../components/DividerPreview'
 
 export default {
     title: 'Divider',
@@ -12,5 +13,8 @@ export default {
             type: 'url',
             title: 'URL'
         }
-    ]
+    ],
+    preview: {
+        component: DividerPreview
+    }
 }

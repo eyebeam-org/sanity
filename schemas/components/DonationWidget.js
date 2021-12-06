@@ -1,5 +1,7 @@
 // DonationWidget.js
 import { MdPayment } from "react-icons/md"
+import DonationPreview from '../../components/DonationPreview'
+
 
 export default {
     title: 'Donation widget',
@@ -12,5 +14,8 @@ export default {
             type: 'url',
             title: 'URL'
         }
-    ]
+    ],
+    preview: {
+        component: DonationPreview
+    }
 }

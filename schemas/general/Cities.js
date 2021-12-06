@@ -34,5 +34,10 @@ export default {
                 },
             ]
         },
+        {
+            title: 'Content',
+            name: 'content',
+            type: 'simpleEditor'
+        }
     ]
 }

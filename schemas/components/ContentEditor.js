@@ -6,15 +6,6 @@ import {
     MdAccountCircle,
 } from "react-icons/md"
 
-
-const highlightRender = props => (
-    <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
-)
-
-const interviewNameRender = props => (
-    <span style={{ backgroundColor: 'lightgrey', fontWeight: 'bold' }}>{props.children}</span>
-)
-
 const personRender = props => (
     <span style={{ background: '#dfddd7', color: '#221f20', borderBottom: 'none' }}>{props.children}</span>
 )
@@ -23,16 +14,12 @@ const mediumRender = props => (
     <span style={{ fontSize: '1.3em' }}>{props.children}</span>
 )
 
-const columnRender = props => (
-    <span style={{ background: 'rgba(255,0,0,0.2)' }}>{props.children}</span>
-)
-
 const logoBlockRender = props => (
-    <div style={{ background: 'rgba(0,0,255,0.2)', padding: '15px' }}>{props.children}</div>
+    <div style={{ borderTop: '1px solid black', borderBottom: '1px solid black', background: 'rgba(0,0,0,0.1)', padding: '35px' }}>{props.children}</div>
 )
 
 const invertedBlockRender = props => (
-    <div style={{ background: 'rgba(0,0,0,0.8)', color: 'rgba(255,255,255,1)', padding: '15px' }}>{props.children}</div>
+    <div style={{ background: 'rgba(0,0,0,0.8)', color: 'rgba(255,255,255,1)', padding: '25px' }}>{props.children}</div>
 )
 
 export default {
@@ -162,15 +149,6 @@ export default {
                         },
                     ]
                 },
-                // {
-                //     type: 'videoBlock'
-                // },
-                // {
-                //     type: 'audioBlock'
-                // },
-                {
-                    type: 'embedBlock'
-                },
                 {
                     type: 'columnsBlock'
                 },
@@ -182,6 +160,15 @@ export default {
                 },
                 {
                     type: 'donationWidget'
+                },
+                {
+                    type: 'faq'
+                },
+                {
+                    type: 'videoBlock'
+                },
+                {
+                    type: 'embedBlock'
                 },
             ]
         }

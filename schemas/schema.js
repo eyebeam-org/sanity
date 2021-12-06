@@ -16,6 +16,7 @@ import columnsBlock from './components/Columns'
 import donationWidget from './components/DonationWidget'
 import applicationButton from './components/ApplicationButton'
 import seeAlso from './components/SeeAlso'
+import Faq from './components/Faq'
 // __ GENERAL
 import eyebeamIsChanging from './general/EyebeamIsChanging'
 import newsletter from './general/Newsletter'
@@ -75,6 +76,7 @@ export default createSchema({
     donationWidget,
     applicationButton,
     seeAlso,
+    Faq,
     // GENERAL
     eyebeamIsChanging,
     everything,
@@ -95,7 +97,7 @@ export default createSchema({
     ourOperatingDocuments,
     mediaKit,
     contact,
-    // CATAGORIES
+    // CATEGORIES
     programOverview,
     program,
     person,

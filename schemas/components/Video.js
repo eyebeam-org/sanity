@@ -1,6 +1,5 @@
 // ICONS
 import { MdVideocam } from "react-icons/md"
-import VideoPreview from '../../components/VideoPreview'
 
 export default {
     name: 'videoBlock',
@@ -9,27 +8,10 @@ export default {
     icon: MdVideocam,
     fields: [
         {
-            name: 'videoFile',
-            type: 'file',
-            title: 'video file',
-            description: 'File format: mp4',
+            name: 'videoPost',
+            title: 'Video Post',
+            type: 'reference',
+            to: [{ type: 'videoPost' }]
         },
-        {
-            title: 'Autoplay',
-            name: 'autoPlay',
-            type: 'boolean',
-        },
-        {
-            title: 'Caption',
-            name: 'caption',
-            type: 'simpleEditor',
-        },
-    ],
-    preview: {
-        select: {
-            video: 'videoFile',
-            caption: 'caption',
-        },
-        component: VideoPreview
-    }
+    ]
 }

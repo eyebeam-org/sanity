@@ -29,6 +29,11 @@ export default {
             ]
         },
         {
+            title: 'Url',
+            name: 'url',
+            type: 'url'
+        },
+        {
             title: 'Content',
             name: 'content',
             type: 'contentEditor'
