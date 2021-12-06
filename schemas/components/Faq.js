@@ -1,5 +1,6 @@
 // Faq.js
 import { MdQuestionAnswer } from "react-icons/md"
+import FaqPreview from '../../components/FaqPreview'
 
 export default {
     title: 'FAQ',
@@ -36,4 +37,11 @@ export default {
             ]
         },
     ],
+    preview: {
+        select: {
+            title: 'title',
+            questionAnswer: 'questionAnswer'
+        },
+        component: FaqPreview
+    }
 }

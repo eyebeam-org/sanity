@@ -1,5 +1,6 @@
 // DonationWidget.js
 import { MdSmartButton } from "react-icons/md"
+import ApplicationButtonPreview from '../../components/ApplicationButtonPreview'
 
 export default {
     title: 'Application button',
@@ -39,6 +40,14 @@ export default {
             name: 'longText',
             type: 'simpleEditor',
         },
-
-    ]
+    ],
+    preview: {
+        select: {
+            size: 'size',
+            url: 'url',
+            shortText: 'shortText',
+            longText: 'longText',
+        },
+        component: ApplicationButtonPreview
+    }
 }
