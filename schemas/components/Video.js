@@ -1,5 +1,6 @@
 // ICONS
 import { MdVideocam } from "react-icons/md"
+import VideoPreview from '../../components/VideoPreview'
 
 export default {
     name: 'videoBlock',
@@ -13,5 +14,11 @@ export default {
             type: 'reference',
             to: [{ type: 'videoPost' }]
         },
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'videoPost.title'
+        },
+        component: VideoPreview
+    }
 }

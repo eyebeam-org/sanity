@@ -6,6 +6,9 @@ import {
     MdAccountCircle,
 } from "react-icons/md"
 
+// PREVIEWS
+import ImagePreview from '../../components/ImagePreview'
+
 const personRender = props => (
     <span style={{ background: '#dfddd7', color: '#221f20', borderBottom: 'none' }}>{props.children}</span>
 )
@@ -147,7 +150,18 @@ export default {
                                 layout: 'radio'
                             },
                         },
-                    ]
+                    ],
+                    preview: {
+                        select: {
+                            image: 'asset',
+                            layout: 'layout',
+                            alt: 'alt',
+                            caption: 'caption',
+                            fullWidth: 'fullWidth',
+                            coverAndCrop: 'coverAndCrop'
+                        },
+                        component: ImagePreview
+                    }
                 },
                 {
                     type: 'columnsBlock'
@@ -167,9 +181,9 @@ export default {
                 {
                     type: 'videoBlock'
                 },
-                {
-                    type: 'embedBlock'
-                },
+                // {
+                //     type: 'embedBlock'
+                // },
             ]
         }
     ]

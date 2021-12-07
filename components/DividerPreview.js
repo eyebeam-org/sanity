@@ -17,7 +17,9 @@ export default class DividerPreview extends React.Component {
         return (
             <div style={{ padding: '10px' }}>
                 <div style={{ fontFamily: 'monospace', fontSize: '10px', letterSpacing: '1px' }}>DIVIDER</div >
-                <hr />
+                <div style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+                    <hr />
+                </div>
             </div>
         )
     }

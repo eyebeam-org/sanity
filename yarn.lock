@@ -1162,9 +1162,13 @@
     make-error "^1.3.0"
     object-assign "^4.1.1"
 
-"@sanity/color@2.1.5", "@sanity/color@^2.1.5":
+"@sanity/color@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@sanity/color/-/color-2.1.5.tgz#63579cf729a42cc004fa850b46b674510a700bda"
+
+"@sanity/color@^2.1.5", "@sanity/color@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.npmjs.org/@sanity/color/-/color-2.1.6.tgz#0dbd7d9b343a4a93ed54bcf3ae42d735112aaf30"
 
 "@sanity/components@^2.14.0":
   version "2.14.0"
@@ -1246,9 +1250,9 @@
     "@sanity/generate-help-url" "2.18.0"
     lodash "^4.17.15"
 
-"@sanity/default-layout@^2.22.4":
-  version "2.22.4"
-  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.22.4.tgz#6381ea4136bdfe7797240c4642f8fc3df10d8a08"
+"@sanity/default-layout@^2.22.5":
+  version "2.22.5"
+  resolved "https://registry.npmjs.org/@sanity/default-layout/-/default-layout-2.22.5.tgz#02ba42f550dec34a778d180250a29558e8f9f5c2"
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/base" "2.22.3"
@@ -1271,9 +1275,9 @@
     prop-types "^15.6.0"
     rxjs "^6.5.3"
 
-"@sanity/desk-tool@^2.22.3":
-  version "2.22.3"
-  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.22.3.tgz#a56e260d1d0c2af405f714bd8b772374806c1180"
+"@sanity/desk-tool@^2.22.5":
+  version "2.22.5"
+  resolved "https://registry.npmjs.org/@sanity/desk-tool/-/desk-tool-2.22.5.tgz#9c4a328bb4f2463a20652863f1c6ee986a0b3ad7"
   dependencies:
     "@reach/auto-id" "^0.13.2"
     "@sanity/client" "2.22.3"
@@ -1397,8 +1401,13 @@
   resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.1.7.tgz#f2b6f2d9b68965b6f26975c0d5528ae75e1472d8"
 
 "@sanity/icons@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.2.1.tgz#0dcef7d0c0ea965acffbccb825d9da6ccaa53330"
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@sanity/icons/-/icons-1.2.2.tgz#6fe5cb74cf75757aee864ea13c2740329046b615"
+
+"@sanity/icons@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@sanity/icons/-/icons-1.2.2.tgz#6fe5cb74cf75757aee864ea13c2740329046b615"
+  integrity sha512-lhA6f/K5r8ajL8PrrCftJe6ry/6VGSD1JZSwZiEodVZgkuZOZLs1mU8E0LXUXEyj8QRlvKpifv2xRbY7rWimQg==
 
 "@sanity/image-url@^1.0.1":
   version "1.0.1"
@@ -1446,8 +1455,8 @@
     oneline "^1.0.3"
 
 "@sanity/logos@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.npmjs.org/@sanity/logos/-/logos-1.1.6.tgz#10bd44f945543cd9efbbfda61bb9ce87b7899c43"
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/@sanity/logos/-/logos-1.1.7.tgz#fbd7a2b2a032f83e163727867ee80e80e8db9dd5"
 
 "@sanity/mutator@2.21.0":
   version "2.21.0"
@@ -1614,15 +1623,15 @@
     rxjs "^6.5.3"
 
 "@sanity/ui@>=0.36.6", "@sanity/ui@^0.36.15":
-  version "0.36.15"
-  resolved "https://registry.npmjs.org/@sanity/ui/-/ui-0.36.15.tgz#fd378890983b7f1332a389d4eb954993c1c146b7"
+  version "0.36.17"
+  resolved "https://registry.npmjs.org/@sanity/ui/-/ui-0.36.17.tgz#2c7674e0d28da0bc2daa605c6dc2b194e5eb23d5"
   dependencies:
     "@juggle/resize-observer" "^3.3.1"
     "@popperjs/core" "^2.10.2"
     "@reach/auto-id" "^0.16.0"
-    "@sanity/color" "^2.1.5"
-    "@sanity/icons" "^1.2.1"
-    framer-motion "^5.0.0"
+    "@sanity/color" "^2.1.6"
+    "@sanity/icons" "^1.2.2"
+    framer-motion "5.3.3"
     lodash "^4.17.21"
     popper-max-size-modifier "^0.2.0"
     react-is "^17.0.2"
@@ -1964,14 +1973,14 @@
   resolved "https://registry.npmjs.org/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
 
 "@virtuoso.dev/react-urx@^0.2.5":
-  version "0.2.9"
-  resolved "https://registry.npmjs.org/@virtuoso.dev/react-urx/-/react-urx-0.2.9.tgz#efb612868b6342d7ba03b6266a9b41ef5971b20e"
+  version "0.2.10"
+  resolved "https://registry.npmjs.org/@virtuoso.dev/react-urx/-/react-urx-0.2.10.tgz#6d94c1ebd58d8c3a76284f2c04b0c2a14a8e6818"
   dependencies:
-    "@virtuoso.dev/urx" "^0.2.9"
+    "@virtuoso.dev/urx" "^0.2.10"
 
-"@virtuoso.dev/urx@^0.2.5", "@virtuoso.dev/urx@^0.2.9":
-  version "0.2.9"
-  resolved "https://registry.npmjs.org/@virtuoso.dev/urx/-/urx-0.2.9.tgz#684b55248c5644176c5cabc6a75600a4545d83ad"
+"@virtuoso.dev/urx@^0.2.10", "@virtuoso.dev/urx@^0.2.5":
+  version "0.2.10"
+  resolved "https://registry.npmjs.org/@virtuoso.dev/urx/-/urx-0.2.10.tgz#d05458ff4472960f390da0cb60cd82335d072a34"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -2851,8 +2860,8 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30001280:
-  version "1.0.30001283"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001283.tgz#8573685bdae4d733ef18f78d44ba0ca5fe9e896b"
+  version "1.0.30001285"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001285.tgz#fe1e52229187e11d6670590790d669b9e03315b7"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -3060,8 +3069,8 @@ color-string@^0.3.0:
     color-name "^1.0.0"
 
 color-string@^1.4.0, color-string@^1.5.2, color-string@^1.6.0:
-  version "1.8.2"
-  resolved "https://registry.npmjs.org/color-string/-/color-string-1.8.2.tgz#08bd49fa5f3889c27b0c670052ed746dd7a671de"
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/color-string/-/color-string-1.9.0.tgz#63b6ebd1bec11999d1df3a79a7569451ac2be8aa"
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
@@ -3197,8 +3206,8 @@ copy-to-clipboard@^3.2.0, copy-to-clipboard@^3.3.1:
     toggle-selection "^1.0.6"
 
 core-js-compat@^3.18.0, core-js-compat@^3.19.1:
-  version "3.19.2"
-  resolved "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.19.2.tgz#18066a3404a302433cb0aa8be82dd3d75c76e5c4"
+  version "3.19.3"
+  resolved "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.19.3.tgz#de75e5821c5ce924a0a1e7b7d5c2cb973ff388aa"
   dependencies:
     browserslist "^4.18.1"
     semver "7.0.0"
@@ -3799,8 +3808,8 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.3.30, electron-to-chromium@^1.3.896:
-  version "1.4.8"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.8.tgz#e1b7752ac1a75e39b5dd90cc7e29ea08b351c484"
+  version "1.4.12"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.12.tgz#5f73d1278c6205fc41d7a0ebd75563046b77c5d8"
 
 element-resize-detector@^1.1.14:
   version "1.2.3"
@@ -4437,7 +4446,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^5.0.0:
+framer-motion@5.3.3:
   version "5.3.3"
   resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-5.3.3.tgz#366fa11512de4e79e061eb09a68278dad92b4419"
   dependencies:
@@ -6192,8 +6201,8 @@ object-copy@^0.1.0:
     kind-of "^3.0.3"
 
 object-inspect@^1.11.0, object-inspect@^1.6.0, object-inspect@^1.9.0:
-  version "1.11.0"
-  resolved "https://registry.npmjs.org/object-inspect/-/object-inspect-1.11.0.tgz#9dceb146cedd4148a0d9e51ab88d34cf509922b1"
+  version "1.11.1"
+  resolved "https://registry.npmjs.org/object-inspect/-/object-inspect-1.11.1.tgz#d4bd7d7de54b9a75599f59a00bd698c1f1c6549b"
 
 object-keys@^1.0.12, object-keys@^1.1.1:
   version "1.1.1"
@@ -9347,9 +9356,9 @@ watchpack@^1.4.0:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
 
-watchpack@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/watchpack/-/watchpack-2.3.0.tgz#a41bca3da6afaff31e92a433f4c856a0c25ea0c4"
+watchpack@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npmjs.org/watchpack/-/watchpack-2.3.1.tgz#4200d9447b401156eeca7767ee610f8809bc9d25"
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
@@ -9415,8 +9424,8 @@ webpack@^3.8.1:
     yargs "^8.0.2"
 
 webpack@^5.1.0:
-  version "5.64.4"
-  resolved "https://registry.npmjs.org/webpack/-/webpack-5.64.4.tgz#e1454b6a13009f57cc2c78e08416cd674622937b"
+  version "5.65.0"
+  resolved "https://registry.npmjs.org/webpack/-/webpack-5.65.0.tgz#ed2891d9145ba1f0d318e4ea4f89c3fa18e6f9be"
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.50"
@@ -9440,7 +9449,7 @@ webpack@^5.1.0:
     schema-utils "^3.1.0"
     tapable "^2.1.1"
     terser-webpack-plugin "^5.1.3"
-    watchpack "^2.3.0"
+    watchpack "^2.3.1"
     webpack-sources "^3.2.2"
 
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.5:

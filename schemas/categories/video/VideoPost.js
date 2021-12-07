@@ -3,7 +3,6 @@ import {
     MdVideocam
 } from "react-icons/md"
 
-
 export default {
     title: 'Video',
     icon: MdVideocam,
