@@ -15,7 +15,7 @@ import dividerBlock from './components/Divider'
 import columnsBlock from './components/Columns'
 import donationWidget from './components/DonationWidget'
 import applicationButton from './components/ApplicationButton'
-import seeAlso from './components/SeeAlso'
+// import seeAlso from './components/SeeAlso'
 import Faq from './components/Faq'
 // __ GENERAL
 import eyebeamIsChanging from './general/EyebeamIsChanging'
@@ -75,7 +75,7 @@ export default createSchema({
     columnsBlock,
     donationWidget,
     applicationButton,
-    seeAlso,
+    // seeAlso,
     Faq,
     // GENERAL
     eyebeamIsChanging,
