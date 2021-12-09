@@ -19,6 +19,11 @@ export default {
                     type: 'boolean',
                 },
                 {
+                    title: 'Inverted',
+                    name: 'inverted',
+                    type: 'boolean',
+                },
+                {
                     title: 'Image',
                     name: 'image',
                     type: 'image',
@@ -74,13 +79,13 @@ export default {
                     type: 'boolean',
                 },
                 {
-                    title: 'Full width',
-                    name: 'fullWidth',
+                    title: 'Inverted',
+                    name: 'inverted',
                     type: 'boolean',
                 },
                 {
-                    title: 'Inverted',
-                    name: 'inverted',
+                    title: 'Full width',
+                    name: 'fullWidth',
                     type: 'boolean',
                 },
                 {
