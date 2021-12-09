@@ -29,6 +29,12 @@ export default {
                             title: 'Country',
                             name: 'country',
                             type: 'string'
+                        },
+                        {
+                            title: 'Timezone',
+                            name: 'timezone',
+                            description: 'tz database time zone name. See: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones',
+                            type: 'string'
                         }
                     ]
                 },
