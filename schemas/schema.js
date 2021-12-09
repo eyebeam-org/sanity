@@ -25,6 +25,7 @@ import ambientImages from './general/AmbientImages'
 import cities from './general/Cities'
 import goal from './general/Goal'
 import statement from './general/Statement'
+import stickers from './general/Stickers'
 // __ ABOUT
 import whatIsEyebeam from './about/WhatIsEyebeam'
 import ourMissionAndValues from './about/OurMissionAndValues'
@@ -85,6 +86,7 @@ export default createSchema({
     cities,
     statement,
     goal,
+    stickers,
     // ABOUT
     whatIsEyebeam,
     ourMissionAndValues,

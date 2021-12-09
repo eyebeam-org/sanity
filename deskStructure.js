@@ -19,7 +19,8 @@ import {
     MdStickyNote2,
     MdDescription,
     MdLocationCity,
-    MdFlare
+    MdFlare,
+    MdAlarm
 } from "react-icons/md"
 
 export default () =>
@@ -34,6 +35,17 @@ export default () =>
                     S.list()
                         .title('General')
                         .items([
+                            // STICKERS
+                            S.listItem()
+                                .title("Stickers")
+                                .icon(MdAlarm)
+                                .child(
+                                    S.editor()
+                                        .title("Stickers")
+                                        .id("stickers")
+                                        .schemaType("stickers")
+                                        .documentId("stickers")
+                                ),
                             // EYEBEAM IS CHANGING
                             S.listItem()
                                 .title("Eyebeam is Changing")

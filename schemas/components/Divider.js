@@ -11,7 +11,8 @@ export default {
         {
             name: 'url',
             type: 'url',
-            title: 'URL'
+            title: 'URL',
+            hidden: true
         }
     ],
     preview: {
