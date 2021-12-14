@@ -31,9 +31,20 @@ export default {
             type: 'image',
             fields: [
                 {
+                    title: 'Alt text',
+                    name: 'alt',
+                    type: 'string',
+                    options: {
+                        isHighlighted: true
+                    }
+                },
+                {
                     name: 'caption',
                     type: 'simpleEditor',
                     title: 'Caption',
+                    options: {
+                        isHighlighted: true
+                    }
                 },
             ]
         },
@@ -49,6 +60,7 @@ export default {
         },
         {
             title: 'Internal links',
+            description: 'Shown in the See also section of the page.',
             name: 'internalLinks',
             type: 'array',
             of: [
@@ -62,6 +74,7 @@ export default {
         },
         {
             title: 'External links',
+            description: 'Shown in the See also section of the page.',
             name: 'externalLinks',
             type: 'array',
             of: [

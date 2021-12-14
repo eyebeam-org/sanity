@@ -37,6 +37,7 @@ export default {
         },
         {
             title: 'Internal links',
+            description: 'Shown in the See also section of the page.',
             name: 'internalLinks',
             type: 'array',
             of: [
@@ -50,6 +51,7 @@ export default {
         },
         {
             title: 'External links',
+            description: 'Shown in the See also section of the page.',
             name: 'externalLinks',
             type: 'array',
             of: [

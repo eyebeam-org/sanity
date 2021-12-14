@@ -29,10 +29,21 @@ export default {
                     type: 'image',
                     fields: [
                         {
+                            title: 'Alt text',
+                            name: 'alt',
+                            type: 'string',
+                            options: {
+                                isHighlighted: true
+                            }
+                        },
+                        {
                             name: 'caption',
                             type: 'simpleEditor',
                             title: 'Caption',
-                        }
+                            options: {
+                                isHighlighted: true
+                            }
+                        },
                     ]
                 },
                 {
@@ -94,10 +105,21 @@ export default {
                     type: 'image',
                     fields: [
                         {
+                            title: 'Alt text',
+                            name: 'alt',
+                            type: 'string',
+                            options: {
+                                isHighlighted: true
+                            }
+                        },
+                        {
                             name: 'caption',
                             type: 'simpleEditor',
                             title: 'Caption',
-                        }
+                            options: {
+                                isHighlighted: true
+                            }
+                        },
                     ]
                 },
                 {
