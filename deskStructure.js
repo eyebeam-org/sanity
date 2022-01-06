@@ -286,6 +286,7 @@ export default () =>
                         .title('People')
                         .filter('_type == $type')
                         .params({ type: 'person' })
+                        .defaultOrdering([{ field: 'title', direction: 'asc' }])
                 ),
             // PROGRAMS
             S.listItem()

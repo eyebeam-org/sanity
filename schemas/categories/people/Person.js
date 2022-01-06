@@ -30,13 +30,11 @@ export default {
       title: 'First Name',
       name: 'firstName',
       type: 'string',
-      validation: Rule => Rule.required()
     },
     {
       title: 'Last Name',
       name: 'lastName',
       type: 'string',
-      validation: Rule => Rule.required()
     },
     {
       title: 'Main image',
@@ -98,6 +96,11 @@ export default {
       title: 'First engagement with Eyebeam',
       name: 'firstEngagement',
       type: 'number'
+    },
+    {
+      title: 'Resident type',
+      name: 'residentType',
+      type: 'string',
     },
     {
       title: 'Internal links',
