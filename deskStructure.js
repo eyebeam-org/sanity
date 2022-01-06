@@ -287,6 +287,7 @@ export default () =>
                         .filter('_type == $type')
                         .params({ type: 'person' })
                         .defaultOrdering([{ field: 'title', direction: 'asc' }])
+                        .menuItems([...S.documentTypeList("person").getMenuItems()])
                 ),
             // PROGRAMS
             S.listItem()
