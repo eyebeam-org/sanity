@@ -62,7 +62,8 @@ export default {
                                         title: 'Person',
                                         name: 'link',
                                         type: 'reference',
-                                        to: [{ type: 'person' }]
+                                        to: [{ type: 'person' }],
+                                        validation: Rule => Rule.required()
                                     },
                                 ]
                             },
