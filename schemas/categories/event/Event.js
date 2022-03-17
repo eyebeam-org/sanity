@@ -2,6 +2,7 @@
 import {
     MdEvent,
 } from "react-icons/md"
+import { format, parseISO, isFuture } from "date-fns"
 
 
 export default {
@@ -121,5 +122,21 @@ export default {
                 },
             ]
         }
-    ]
+    ],
+    preview: {
+        select: {
+            title: 'title',
+            date: 'startDate',
+            image: 'mainImage',
+        },
+        prepare(selection) {
+            const { title, date, image } = selection
+            const formattedDate = date ? format(parseISO(date), "d-MM-yyyy HH:mm") : ''
+            return {
+                title: title,
+                subtitle: formattedDate,
+                media: image
+            }
+        },
+    }
 }
