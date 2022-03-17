@@ -35,7 +35,8 @@ export default {
                     type: 'string',
                     options: {
                         isHighlighted: true
-                    }
+                    },
+                    validation: Rule => Rule.required()
                 },
                 {
                     name: 'caption',
