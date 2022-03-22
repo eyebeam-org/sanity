@@ -41,7 +41,7 @@ export default {
                 },
                 {
                     name: 'caption',
-                    type: 'simpleEditor',
+                    type: 'contentEditor',
                     title: 'Caption',
                     options: {
                         isHighlighted: true

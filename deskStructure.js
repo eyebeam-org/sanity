@@ -46,6 +46,17 @@ export default () =>
                                         .schemaType("stickers")
                                         .documentId("stickers")
                                 ),
+                            S.listItem()
+                                // OPEN EYEBEAM
+                                .title("Open Eyebeam")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                    .title("Open Eyebeam")
+                                    .id("open-eyebeam")
+                                    .schemaType("openEyebeam")
+                                    .documentId("openEyebeam")
+                                ),
                             // EYEBEAM IS CHANGING
                             S.listItem()
                                 .title("Eyebeam is Changing")

@@ -55,6 +55,9 @@ export default {
                             title: 'Inverted block', value: 'invertedBlock', blockEditor: {
                                 render: invertedBlockRender
                             }
+                        },
+                        {
+                            title: 'Inline block', value: 'span'
                         }
                     ],
                     lists: [],
