@@ -28,6 +28,7 @@ export default {
             title: 'Main image',
             name: 'mainImage',
             type: 'image',
+            validation: Rule => Rule.required(),
             fields: [
                 {
                     title: 'Alt text',
@@ -35,7 +36,8 @@ export default {
                     type: 'string',
                     options: {
                         isHighlighted: true
-                    }
+                    },
+                    validation: Rule => Rule.required()
                 },
                 {
                     name: 'caption',
@@ -53,9 +55,19 @@ export default {
             type: 'url'
         },
         {
+            title: 'Video runtime',
+            name: 'runtime',
+            type: 'string'
+        },
+        {
             title: 'Content',
             name: 'content',
             type: 'contentEditor'
+        },
+        {
+            title: 'Transcript (pdf file)',
+            name: 'transcript',
+            type: 'file'
         },
         {
             title: 'People',
