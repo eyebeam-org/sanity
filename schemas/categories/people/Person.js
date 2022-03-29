@@ -3,8 +3,6 @@ import {
   MdAccountCircle
 } from "react-icons/md"
 
-
-
 export default {
   title: 'Person',
   icon: MdAccountCircle,
@@ -149,5 +147,5 @@ export default {
       name: "title",
       by: [{ field: "title", direction: "asc" }],
     },
-  ],
+  ]
 }

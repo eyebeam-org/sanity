@@ -181,11 +181,12 @@ export default {
                     type: 'faq'
                 },
                 {
+                    type: 'personList'
+                },
+                {
                     type: 'videoBlock'
                 },
-                // {
-                //     type: 'embedBlock'
-                // },
+
             ]
         }
     ]
