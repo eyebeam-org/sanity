@@ -26,6 +26,11 @@ export default {
             validation: Rule => Rule.required()
         },
         {
+            title: 'Sub title',
+            name: 'subtitle',
+            type: 'string',
+        },
+        {
             title: 'Main image',
             name: 'mainImage',
             type: 'image',
