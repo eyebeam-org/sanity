@@ -29,7 +29,7 @@ import stickers from './general/Stickers'
 // __ ABOUT
 import whatIsEyebeam from './about/WhatIsEyebeam'
 import ourMissionAndValues from './about/OurMissionAndValues'
-import ourHistory from './about/ourHistory'
+import ourHistory from './about/OurHistory'
 import staffAndBoard from './about/StaffAndBoard'
 import artists from './about/Artists'
 import supportEyebeam from './about/SupportEyebeam'
