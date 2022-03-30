@@ -41,6 +41,11 @@ export default {
             }
         },
         {
+            title: 'Sub title',
+            name: 'subtitle',
+            type: 'string',
+        },
+        {
             title: 'Main image',
             name: 'mainImage',
             type: 'image',
