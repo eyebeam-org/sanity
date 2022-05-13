@@ -24,6 +24,21 @@ export default {
             },
             validation: Rule => Rule.required()
         },
+    {
+            title: 'Date published',
+            name: 'pubDate',
+            type: 'date',
+            initalValue: new Date().getDate()
+        },
+        {
+            title: 'Tags',
+            name: 'tags',
+            type: 'array',
+            of: [{type: 'string'}],
+            options: {
+                layout: 'tags'
+            }
+        },
         {
             title: 'Main image',
             name: 'mainImage',
