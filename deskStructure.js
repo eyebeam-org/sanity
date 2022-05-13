@@ -57,6 +57,18 @@ export default () =>
                                         .schemaType("eyebeamIsChanging")
                                         .documentId("eyebeam-is-changing")
                                 ),
+                            // FEATURED ARTISTS
+                            S.listItem()
+                                .title("Featured Artists")
+                                .icon(MdArticle)
+                                .child(
+                                    S.editor()
+                                        .title("Featured Artists")
+                                        .id('featured-artists')
+                                        .schemaType("featuredArtists")
+                                        .documentId("featured-artists")
+                                ),
+
                             // EVERYTHING
                             S.listItem()
                                 .title("Everything")

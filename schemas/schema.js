@@ -19,6 +19,7 @@ import personList from './components/PersonList'
 import Faq from './components/Faq'
 // __ GENERAL
 import eyebeamIsChanging from './general/EyebeamIsChanging'
+import featuredArtists from './general/FeaturedArtists'
 import newsletter from './general/Newsletter'
 import everything from './general/Everything'
 import ambientImages from './general/AmbientImages'
@@ -80,6 +81,7 @@ export default createSchema({
     Faq,
     // GENERAL
     eyebeamIsChanging,
+    featuredArtists,
     everything,
     ambientImages,
     newsletter,
