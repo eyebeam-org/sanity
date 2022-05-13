@@ -25,6 +25,7 @@ const invertedBlockRender = props => (
     <div style={{ background: 'rgba(0,0,0,0.8)', color: 'rgba(255,255,255,1)', padding: '25px' }}>{props.children}</div>
 )
 
+
 export default {
     type: 'object',
     name: 'contentEditor',
@@ -39,6 +40,7 @@ export default {
                     type: 'block',
                     styles: [
                         { title: 'Normal', value: 'normal' },
+                        {title: 'HTML', value: 'html'},
                         {
                             title: 'Medium', value: 'medium', blockEditor: {
                                 render: mediumRender
@@ -184,11 +186,12 @@ export default {
                     type: 'faq'
                 },
                 {
+                    type: 'personList'
+                },
+                {
                     type: 'videoBlock'
                 },
-                // {
-                //     type: 'embedBlock'
-                // },
+
             ]
         }
     ]
