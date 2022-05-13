@@ -1,8 +1,8 @@
 export default function resolveProductionUrl(document) {
     console.log(document)
     let type = ''
-    
-    switch(document._type) {
+
+    switch (document._type) {
         case 'event':
             type = 'events'
             break
