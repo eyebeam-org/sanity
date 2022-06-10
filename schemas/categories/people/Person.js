@@ -139,7 +139,13 @@ export default {
           ]
         },
       ]
-    }
+    },
+    {
+      title: 'Connected Open Eyebeam room',
+      description: 'Slug of the room (without the "#")',
+      name: 'openEyebeamRoom',
+      type: 'string',
+    },
   ],
   orderings: [
     {
