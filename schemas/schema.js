@@ -42,11 +42,8 @@ import mediaKit from './about/MediaKit'
 import contact from './about/Contact'
 // __ SUPPORT
 import donate from './support/Donate.js'
-import joinUs from './support/JoinUs.js'
-import theFold from './support/theFold.js'
 import supporters from './support/Supporters.js'
 import volunteer from './support/Volunteer.js'
-import interns from './support/Interns.js'
 // __ PEOPLE
 import person from './categories/people/Person'
 // __ PROGRAM
@@ -112,11 +109,8 @@ export default createSchema({
     contact,
     //SUPPORT
     donate,
-    joinUs,
-    theFold,
     supporters,
     volunteer,
-    interns,
     // CATEGORIES
     programOverview,
     program,

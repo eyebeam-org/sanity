@@ -319,26 +319,6 @@ export default () =>
                                         .documentId("donate")
                                 ),
                             S.listItem()
-                            .title("Join Us")
-                            .icon(MdArticle)
-                            .child(
-                                S.editor()
-                                .title("Join Eyebeam")
-                                .id('join-us')
-                                .schemaType('joinUs')
-                                .documentId('join-us')
-                            ),
-                            S.listItem()
-                            .title("The Fold")
-                            .icon(MdArticle)
-                            .child(
-                                S.editor()
-                                .title("Enter The Fold")
-                                .id('the-fold')
-                                .schemaType('theFold')
-                                .documentId('the-fold')
-                            ),
-                            S.listItem()
                             .title("Supporters")
                             .icon(MdArticle)
                             .child(
@@ -358,18 +338,6 @@ export default () =>
                                 .schemaType('volunteer')
                                 .documentId('volunteer')
                             ),
-                           S.listItem()
-                            .title("Interns")
-                            .icon(MdArticle)
-                            .child(
-                                S.editor()
-                                .title("Intern at Eyebeam")
-                                .id('interns')
-                                .schemaType('interns')
-                                .documentId('interns')
-                            )
-
-
 
                 ])
             ),
