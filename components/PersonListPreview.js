@@ -41,7 +41,7 @@ export default class PersonListPreview extends React.Component {
         return (
             <div style={{ padding: '10px' }}>
                 <div style={{ fontFamily: 'monospace', fontSize: '10px', letterSpacing: '1px' }}>Person List</div >
-                <PersonList list={value.persons} />
+                <PersonList list={value.persons != undefined && value.persons.length > 0 ? value.persons : []} />
             </div >
         )
     }
