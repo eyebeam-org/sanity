@@ -18,6 +18,13 @@ export default {
                             type: 'reference',
                             to: [{ type: 'person' }],
                         },
+                          {
+                            title: 'Featured Artist 3',
+                            name: 'featuredArtist3',
+                            type: 'reference',
+                            to: [{ type: 'person' }],
+                        },
+
 
             ],
     options: {
