@@ -35,6 +35,11 @@ export default {
       type: 'string',
     },
     {
+      title: 'Short bio',
+      name: 'shortBio',
+      type: 'simpleEditor'
+    },
+    {
       title: 'Main image',
       name: 'mainImage',
       type: 'image',
