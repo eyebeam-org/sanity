@@ -92,6 +92,11 @@ export default {
       type: 'simpleEditor'
     },
     {
+      title: 'Short bio',
+      name: 'shortBio',
+      type: 'simpleEditor'
+    },
+    {
       title: 'Website',
       name: 'website',
       type: 'url'
